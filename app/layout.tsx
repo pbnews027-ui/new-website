@@ -293,7 +293,7 @@ export default function RootLayout({
             <div className="lg:col-span-2 flex flex-col items-center">
               <div className="w-full max-w-[190px] rounded-2xl overflow-hidden border border-amber-400/30 bg-slate-900 shadow-2xl mb-2 p-1 bg-gradient-to-b from-[#1a1329] to-[#090514]">
                 <img
-                  src="/teen-patti-master-3000.webp"
+                  src="/teen-patti-master-app-3000.webp"
                   alt="Teen Patti Master App Preview"
                   className="w-full h-auto object-contain rounded-xl"
                   onError={(e) => {
