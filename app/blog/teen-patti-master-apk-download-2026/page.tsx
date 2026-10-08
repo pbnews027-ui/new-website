@@ -83,6 +83,7 @@ export default function TeenPattiMasterDownload2026() {
       />
 
       <div className="max-w-4xl mx-auto space-y-10">
+        {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" className="text-xs text-slate-400 flex items-center gap-2">
           <Link href="/" className="text-amber-400 hover:underline">
             Home
@@ -93,6 +94,7 @@ export default function TeenPattiMasterDownload2026() {
           <span className="text-slate-300 truncate">Teen Patti Master APK Download 2026</span>
         </nav>
 
+        {/* Page Header */}
         <header className="space-y-4 border-b border-slate-800 pb-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-amber-400/30 text-amber-300 text-xs font-semibold">
             <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
@@ -104,12 +106,13 @@ export default function TeenPattiMasterDownload2026() {
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 pt-2">
             <span>By <strong>Official Gaming Desk</strong></span>
             <span>•</span>
-            <span>Updated: 2026</span>
+            <span>Updated: October 2026</span>
             <span>•</span>
             <span>⏱️ 7 Min Read</span>
           </div>
         </header>
 
+        {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-amber-500/20 bg-slate-950 shadow-2xl">
           <Image
             src="/teen-patti-master-2026.webp"
@@ -121,6 +124,7 @@ export default function TeenPattiMasterDownload2026() {
           />
         </div>
 
+        {/* Introduction */}
         <section className="space-y-4 text-sm sm:text-base leading-relaxed text-slate-300">
           <p>
             In the last few years, real money digital gaming has seen unprecedented growth in India.
@@ -139,10 +143,11 @@ export default function TeenPattiMasterDownload2026() {
           </p>
         </section>
 
+        {/* Quick CTA Box */}
         <div className="p-6 rounded-2xl bg-gradient-to-r from-emerald-950/70 via-slate-900 to-indigo-950/70 border border-emerald-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <h2 className="text-lg font-bold text-white">Direct CDN Mirror Link (v5.2)</h2>
-            <p className="text-xs text-slate-300">Clean 64 MB package • Antivirus scanned • Fast install</p>
+            <p className="text-xs text-slate-300">Clean 64 MB package • Antivirus scanned • Instant setup</p>
           </div>
           <a
             href={DOWNLOAD_URL}
@@ -152,6 +157,7 @@ export default function TeenPattiMasterDownload2026() {
           </a>
         </div>
 
+        {/* 1. Architecture */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
             1. Teen Patti Master: The Engine &amp; Security Architecture Explained
@@ -161,12 +167,37 @@ export default function TeenPattiMasterDownload2026() {
             platform. Unlike other social card apps, this application offers live peer-to-peer multiplayer tables,
             dynamic pool games, and direct banking integrations.
           </p>
+          <h3 className="text-base font-bold text-amber-300 pt-2">Why distribute the APK directly?</h3>
+          <p className="text-sm leading-relaxed text-slate-300">
+            India has a well-defined legal landscape regarding real money gaming, distinguishing between skill-based
+            gaming and games of chance. Due to regional distribution restrictions on real-money card games on Google’s
+            Play Store, the official client is distributed directly from the developers via secure Content Delivery Network
+            (CDN) cloud mirrors as an Android Package Kit (APK).
+          </p>
+          <h3 className="text-base font-bold text-amber-300 pt-2">Platform Performance Basics</h3>
+          <ul className="space-y-2 text-sm text-slate-300 list-disc list-inside">
+            <li>
+              <strong>Adaptive Network Handshake:</strong> The mobile client dynamically changes packet transmission
+              speeds so players on basic 4G mobile connections experience zero input lag.
+            </li>
+            <li>
+              <strong>Random Number Generator (RNG) Certification:</strong> Dealing sequences, card shuffles, and deck
+              distribution are governed by cryptographically secured algorithms, preventing player collusion and client-side manipulation.
+            </li>
+            <li>
+              <strong>Low Battery &amp; Thermal Footprint:</strong> Highly optimized for low hardware specifications (starting from 2 GB RAM and Android OS 5.0).
+            </li>
+          </ul>
         </section>
 
+        {/* 2. Specs Table */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
             2. App Specifications &amp; Hardware Compatibility
           </h2>
+          <p className="text-sm text-slate-300">
+            Before beginning the download, ensure your smartphone meets the system requirements to run 60 FPS smoothly:
+          </p>
           <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/70 shadow-xl">
             <table className="w-full text-left text-xs sm:text-sm">
               <thead className="bg-slate-900 text-amber-400 uppercase text-[11px] font-black border-b border-slate-800">
@@ -197,6 +228,14 @@ export default function TeenPattiMasterDownload2026() {
                   <td className="py-3 px-4">2 GB RAM (3 GB+ recommended)</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40">
+                  <td className="py-3 px-4 font-bold text-slate-200">Internal Storage</td>
+                  <td className="py-3 px-4">Free space: 200 MB (minimum)</td>
+                </tr>
+                <tr className="hover:bg-slate-900/40">
+                  <td className="py-3 px-4 font-bold text-slate-200">Connectivity</td>
+                  <td className="py-3 px-4">4G/5G or stable local Wi-Fi</td>
+                </tr>
+                <tr className="hover:bg-slate-900/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Data Security</td>
                   <td className="py-3 px-4 text-amber-300">256-Bit SSL End-To-End Encryption</td>
                 </tr>
@@ -205,29 +244,32 @@ export default function TeenPattiMasterDownload2026() {
           </div>
         </section>
 
+        {/* 3. Install Guide */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
             3. Official APK Download &amp; Clean Install Guide
           </h2>
           <div className="space-y-3 bg-slate-900/60 p-6 rounded-2xl border border-slate-800 text-xs sm:text-sm text-slate-300">
             <div>
-              <strong className="text-amber-400">Step 1: Get Genuine APK —</strong> Download from the{' '}
+              <strong className="text-amber-400">Step 1: Go to Secured CDN Mirror —</strong> Access the{' '}
               <Link href="/" className="text-amber-300 font-semibold underline">
                 Teen Patti Master official portal
-              </Link>.
+              </Link>{' '}
+              and click the dedicated Download APK button to receive the file directly from cloud servers.
             </div>
             <div>
-              <strong className="text-amber-400">Step 2: Android System Permission —</strong> If Chrome asks, tap <strong>Download anyway</strong>.
+              <strong className="text-amber-400">Step 2: Android System Permission —</strong> If Chrome asks: &quot;This file can be unsafe. Do you still want to download?&quot;, tap <strong>Download anyway</strong>.
             </div>
             <div>
-              <strong className="text-amber-400">Step 3: Enable Unknown Sources —</strong> Set &quot;Allow from this source&quot; to ON in settings.
+              <strong className="text-amber-400">Step 3: Turn on Unknown Sources —</strong> Go to Settings &gt; Apps &gt; Special app access &gt; Install unknown apps, and toggle &quot;Allow from this source&quot; to ON.
             </div>
             <div>
-              <strong className="text-amber-400">Step 4: Complete Installation —</strong> Tap Install, then <strong>Open</strong>.
+              <strong className="text-amber-400">Step 4: Complete Installation —</strong> Tap the 64 MB package in your notifications or download folder, tap Install, and launch the game interface.
             </div>
           </div>
         </section>
 
+        {/* 4. Bonus Breakdown */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
             4. Breakup of Rs. 5,100 Welcome Rewards and Signup Bonuses
@@ -236,31 +278,118 @@ export default function TeenPattiMasterDownload2026() {
             <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
               <h3 className="font-bold text-amber-300 mb-1">1. Rs. 51 Instant Credit Verification</h3>
               <p>
-                Open profile, tap <strong>Bind Mobile</strong>, enter 10-digit number and OTP to get ₹51 starter funds directly.
+                New accounts start in Guest mode. Open your profile on the top left, tap <strong>Bind Mobile</strong>, enter your 10-digit phone number, and verify the 6-digit SMS OTP. A ₹51 promotional credit is deposited directly into your main wallet to enter micro-stake rooms without any initial deposit.
               </p>
             </div>
             <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
-              <h3 className="font-bold text-amber-300 mb-1">2. 7-Day Progressive Milestone</h3>
+              <h3 className="font-bold text-amber-300 mb-1">2. 7-Day Progressive Milestone Ladder</h3>
               <p>
-                Log in daily to spin the wheel and wager on tables to convert milestone bonuses into cashout balance.
+                The complete ₹5,100 promotional pool unlocks systematically over a 7-day cycle:
               </p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li><strong>Daily Wheel Spins:</strong> Log in on consecutive days to receive a spin on the prize wheel with bonus chips and deposit rebates.</li>
+                <li><strong>Turnover Milestones:</strong> Bonus credits convert into withdrawable cash by wagering on tables according to rake milestones.</li>
+              </ul>
             </div>
           </div>
         </section>
 
+        {/* 5. Table Formats */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
-            5. Instant Cashout through Bank &amp; UPI
+            5. Common Table Styles in Teen Patti Master
+          </h2>
+          <p className="text-sm text-slate-300">
+            The platform features over 30 card variations and fast arcade games:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm">
+            <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+              <strong className="text-amber-300 block mb-1">Classic 3 Patti</strong>
+              <p className="text-slate-400">The standard 5-6 player card room. Play Blind or Seen, request side-shows, and manage pot limits.</p>
+            </div>
+            <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+              <strong className="text-amber-300 block mb-1">Dragon vs Tiger</strong>
+              <p className="text-slate-400">Fast 10-second action where one card is dealt to each spot and the highest card wins.</p>
+            </div>
+            <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+              <strong className="text-amber-300 block mb-1">13-Card Points Rummy</strong>
+              <p className="text-slate-400">Traditional skill format centered around forming pure sequences and making calculated discards.</p>
+            </div>
+            <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-xl">
+              <strong className="text-amber-300 block mb-1">Muflis &amp; AK47</strong>
+              <p className="text-slate-400">Tactical variants where rank rules are inverted (Muflis lowest card wins) or specific ranks become wildcards.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Hand Rankings */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+            6. Teen Patti Hands Official Ranking
+          </h2>
+          <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm bg-slate-900/50 p-6 rounded-2xl border border-slate-800 text-slate-300">
+            <li><strong className="text-amber-400">Trail / Trio / Set:</strong> Three cards of identical rank (A-A-A highest, 2-2-2 lowest).</li>
+            <li><strong className="text-amber-400">Pure Sequence / Straight Flush:</strong> Three consecutive cards of the same suit (e.g., A♠-2♠-3♠).</li>
+            <li><strong className="text-amber-400">Normal Sequence / Run:</strong> Three consecutive cards of mixed suits (e.g., 5♠-6♦-7♣).</li>
+            <li><strong className="text-amber-400">Colour / Flush:</strong> Any three non-consecutive cards of matching suit (e.g., K♦-9♦-2♦).</li>
+            <li><strong className="text-amber-400">Pair:</strong> Two cards of equal rank alongside one kicker card.</li>
+            <li><strong className="text-amber-400">High Card:</strong> Unmatched hand where the individual highest-value card breaks the tie.</li>
+          </ol>
+        </section>
+
+        {/* 7. Bankroll Strategy */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+            7. The Professional’s Bankroll and Table Strategy
+          </h2>
+          <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+            <li>• <strong>5% Capital Cap:</strong> Never risk more than 5% of your total app balance on any single session or table to absorb normal game variance.</li>
+            <li>• <strong>Seen Cards Discipline:</strong> If your cards don&apos;t meet minimum sequence or pair criteria after seeing, fold early to avoid speculative calls.</li>
+            <li>• <strong>Session Limits:</strong> Set rigid stop-loss and profit-taking targets before playing, and exit once the milestone is met.</li>
+          </ul>
+        </section>
+
+        {/* 8. UPI Cashout */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+            8. Instant Cashout through Bank &amp; UPI
           </h2>
           <div className="p-4 bg-slate-950 border border-slate-800 rounded-xl text-center font-mono text-xs sm:text-sm text-emerald-400">
             [Tap Withdraw] ──&gt; [Select UPI / Bank] ──&gt; [Enter Amount (Min ₹100)] ──&gt; [Receipt Within 5-10 Mins]
           </div>
+          <ol className="list-decimal list-inside space-y-1.5 text-xs sm:text-sm text-slate-300">
+            <li>Tap <strong>Withdraw</strong> in the lobby menu.</li>
+            <li>Choose <strong>UPI</strong> or <strong>Bank IMPS</strong>.</li>
+            <li>Enter your validated UPI ID (VPA) or Bank Account and IFSC details.</li>
+            <li>Input the amount (Minimum ₹100) and tap Confirm. Requests process in 5-10 minutes.</li>
+          </ol>
         </section>
 
-    {/* Section 6: Frequently Asked Questions (FAQs) */}
+        {/* 9. Anti-Ban Rules */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+            9. Anti-Ban &amp; Account Compliance Rules
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm">
+            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+              <strong className="text-rose-400 block">Single Device Rule</strong>
+              <p className="text-slate-400">Avoid running clone apps or multiple accounts on the same smartphone.</p>
+            </div>
+            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+              <strong className="text-rose-400 block">No Table Collusion</strong>
+              <p className="text-slate-400">Do not coordinate with friends on same table; algorithms actively track abnormal chip dumping.</p>
+            </div>
+            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+              <strong className="text-emerald-400 block">Real Registration</strong>
+              <p className="text-slate-400">Use your own active mobile number for SMS OTP security and smooth withdrawals.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 10. FAQs */}
         <section className="space-y-4 border-t border-slate-800 pt-8">
           <h2 className="text-xl sm:text-2xl font-black text-white border-l-4 border-emerald-400 pl-3">
-            Frequently Asked Questions (FAQs)
+            10. Frequently Asked Questions (FAQs)
           </h2>
           <div className="space-y-3">
             <div className="p-4 bg-slate-900/80 rounded-xl border border-slate-800">
