@@ -3,14 +3,13 @@ import { MetadataRoute } from 'next';
 import { ARTICLES_DATA } from './blog/articlesData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Tamaru live domain url ahiya lakho (last slash vagar)
   const baseUrl = 'https://bolaseo.com';
 
-  // Tamara badha articles auto-fetch thashe
-  const articleUrls: MetadataRoute.Sitemap = ARTICLES_DATA.map((article) => ({
+  // Articles safety check સાથે મેપ કરો
+  const articleUrls: MetadataRoute.Sitemap = (ARTICLES_DATA || []).map((article) => ({
     url: `${baseUrl}/blog/${article.slug}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly',
+    changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
 
@@ -19,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: 'daily' as const,
       priority: 1.0,
     },
     ...articleUrls,
