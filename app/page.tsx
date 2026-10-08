@@ -114,21 +114,20 @@ export default function Home() {
                 Official Site
               </h1>
 
-              {/* Mobile Quick Download Badge */}
-              <div className="lg:hidden shrink-0 flex flex-col items-center gap-1.5">
-                <div className="w-[64px] h-[64px] relative rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-lg shadow-amber-500/15 bg-[#1c122c] p-1 flex items-center justify-center">
+              {/* Mobile Quick Download Badge (Fixed clipping issue with padding and auto-height) */}
+              <div className="lg:hidden shrink-0 flex flex-col items-center gap-2 w-20">
+                <div className="w-20 h-24 relative rounded-xl overflow-hidden border border-amber-500/30 bg-[#0f0a1d]/90 p-1 flex items-center justify-center">
                   <Image
-                    src="/teen-patti-master-3000.webp"
+                    src="/teen-patti-master-app-3000.webp"
                     alt="Teen Patti Master Logo"
-                    width={56}
-                    height={56}
-                    className="object-contain rounded-xl"
+                    fill
+                    className="object-contain p-1 rounded-lg"
                     priority
                   />
                 </div>
                 <a
                   href={DOWNLOAD_URL}
-                  className="w-full py-1 px-1 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-black text-[9px] text-center rounded-lg shadow-md border border-emerald-300 active:scale-95 transition"
+                  className="w-full py-1.5 px-2 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-slate-955 font-black text-[10px] text-center rounded-lg shadow-md border border-emerald-300 active:scale-95 transition"
                 >
                   ⚡ APK
                 </a>
@@ -150,7 +149,7 @@ export default function Home() {
             <div className="w-full pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <a
                 href={DOWNLOAD_URL}
-                className="group py-3.5 px-8 bg-gradient-to-r from-emerald-400 via-green-400 to-emerald-500 hover:brightness-110 text-slate-950 font-black text-base text-center rounded-2xl shadow-xl shadow-emerald-500/25 active:scale-95 transition transform flex items-center justify-center gap-3 animate-pulse"
+                className="group py-3.5 px-8 bg-gradient-to-r from-emerald-400 via-green-400 to-emerald-500 hover:brightness-110 text-slate-955 font-black text-base text-center rounded-2xl shadow-xl shadow-emerald-500/25 active:scale-95 transition transform flex items-center justify-center gap-3 animate-pulse"
               >
                 <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
                   <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9992.4482.9992.9993s-.4482.9997-.9992.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9992.4482.9992.9993s-.4482.9997-.9992.9997m11.4045-6.02l1.997-3.459a.416.416 0 00-.1523-.5676.416.416 0 00-.568.1523l-2.0223 3.503c-1.4244-.652-3.003-1.0182-4.7359-1.0182-1.733 0-3.3115.3662-4.736 1.0182L5.642 4.8871a.416.416 0 00-.568-.1523.416.416 0 00-.1523.5676l1.997 3.459C3.197 10.6625 1 14.108 1 18.0673h22c0-3.9593-2.197-7.4048-5.9185-9.3059" />
@@ -186,28 +185,28 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Column: Desktop Card */}
+          {/* Right Column: Desktop Card (Resolved Image Clipping with adaptive height & aspect-ratio) */}
           <div className="hidden lg:flex lg:col-span-5 justify-center">
-            <div className="relative w-full max-w-[360px] rounded-3xl p-5 bg-gradient-to-b from-slate-900/95 via-slate-950 to-[#0c0817] border border-amber-500/30 shadow-2xl backdrop-blur-xl">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <div className="relative w-full max-w-[360px] rounded-3xl p-5 bg-gradient-to-b from-[#0a0614] via-slate-955 to-[#0e0a1b] border border-amber-500/30 shadow-2xl backdrop-blur-xl">
+              <div className="flex items-center justify-between border-b border-slate-800/80 pb-3 mb-4">
                 <span className="text-xs font-black text-amber-400 tracking-wider uppercase">Exclusive Welcome Bonus</span>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Active</span>
               </div>
 
-              <div className="rounded-2xl border border-amber-400/20 mb-3 bg-gradient-to-b from-[#1c122c] to-[#0c0517] relative h-[210px] flex items-center justify-center p-3">
+              {/* Responsive 3:4 Aspect ratio container to prevent clipping */}
+              <div className="rounded-2xl border border-amber-400/20 mb-4 bg-gradient-to-b from-[#160d26] to-[#0a0414] relative w-full aspect-[3/4] flex items-center justify-center p-2.5 overflow-hidden">
                 <Image
-                  src="/teen-patti-master-3000.webp"
+                  src="/teen-patti-master-app-3000.webp"
                   alt="Teen Patti Master Official"
-                  width={180}
-                  height={180}
-                  className="object-contain drop-shadow-md"
+                  fill
+                  className="object-contain p-2 rounded-xl transition-transform duration-500 hover:scale-[1.02]"
                   priority
                 />
               </div>
 
               <a
                 href={DOWNLOAD_URL}
-                className="block w-full py-3 mb-3 bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.45)] text-center transition animate-pulse"
+                className="block w-full py-3 mb-4 bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-400 hover:to-green-500 text-slate-955 font-black text-xs uppercase tracking-wider rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.45)] text-center transition active:scale-[0.98]"
               >
                 ⚡ DOWNLOAD OFFICIAL APK
               </a>
@@ -365,7 +364,7 @@ export default function Home() {
         </div>
 
         {/* Quick Navigation Menu */}
-        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900/90 to-slate-950 border border-slate-800">
+        <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900/95 to-slate-950 border border-slate-800">
           <span className="text-xs font-black uppercase text-amber-400 tracking-wider block mb-3">
             📑 Quick Navigation: Jump to Any Section
           </span>
@@ -381,7 +380,7 @@ export default function Home() {
             <a href="#safety-rules" className="hover:text-amber-400 transition">9. Account Security, Fair Play &amp; Avoiding Account Bans</a>
             <a href="#refer-earn" className="hover:text-amber-400 transition">10. Refer &amp; Earn Programme: Earn Daily Passive Income</a>
             <a href="#troubleshooting" className="hover:text-amber-400 transition">11. Troubleshooting Common Problems &amp; Support</a>
-            <a href="#faq" className="hover:text-amber-400 transition">12. Real Player Questions (FAQs)</a>
+            <a href="#faq" className="hover:text-amber-405 transition">12. Real Player Questions (FAQs)</a>
           </div>
         </div>
 
@@ -423,39 +422,39 @@ export default function Home() {
                   <td className="py-3 px-4 font-bold text-slate-200">Current Package</td>
                   <td className="py-3 px-4">v5.2 Stable Android Edition</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Size of the File</td>
                   <td className="py-3 px-4">64 MB (Quick &amp; Light Weight)</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Android OS</td>
                   <td className="py-3 px-4">Android 5.0 (Lollipop) or later</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Recommended RAM</td>
                   <td className="py-3 px-4">2 GB RAM minimum (for a Smooth 60 FPS experience)</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Welcome Bonus</td>
                   <td className="py-3 px-4 text-amber-400 font-black">Up To ₹5,100 Cash Rewards Milestone</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Total Games</td>
                   <td className="py-3 px-4">30+ Games (Teen Patti, Rummy, Dragon vs Tiger, Slots)</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Fair Play Certification</td>
                   <td className="py-3 px-4">100% RNG Certified 256-Bit SSL Data Encryption</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Payment Methods</td>
                   <td className="py-3 px-4">Instant UPI (PhonePe, Google Pay, Paytm) &amp; IMPS Bank Transfer</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Minimum Cashout</td>
                   <td className="py-3 px-4 font-extrabold text-emerald-400">₹100 Flat</td>
                 </tr>
-                <tr className="hover:bg-slate-900/40">
+                <tr className="hover:bg-slate-955/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Customer Support</td>
                   <td className="py-3 px-4">In-app Live Help Desk 24×7</td>
                 </tr>
@@ -474,13 +473,13 @@ export default function Home() {
           </p>
           <div className="space-y-3 bg-slate-900/50 p-6 rounded-2xl border border-slate-800 text-xs sm:text-sm text-slate-300">
             <div>
-              <strong className="text-amber-400">Step 1: Download Clean APK —</strong> Click the official server download link. It’s a lightweight 64 MB package that you’ll be downloading. If you are using a browser like Google Chrome you may see a standard Android security prompt: <em>&quot;File might be harmful. Do you want to download TeenPattiMaster.apk?&quot;</em> Don’t worry, this is an automated alert Android shows for any app downloaded outside the Google Play Store. Click <strong>&quot;Download Anyway&quot;</strong> to continue.
+              <strong className="text-amber-450">Step 1: Download Clean APK —</strong> Click the official server download link. It’s a lightweight 64 MB package that you’ll be downloading. If you are using a browser like Google Chrome you may see a standard Android security prompt: <em>&quot;File might be harmful. Do you want to download TeenPattiMaster.apk?&quot;</em> Don’t worry, this is an automated alert Android shows for any app downloaded outside the Google Play Store. Click <strong>&quot;Download Anyway&quot;</strong> to continue.
             </div>
             <div>
-              <strong className="text-amber-400">Step 2: Enable Unknown Sources —</strong> Once download is complete, tap the notification for the downloaded APK. If this is the first time you are sideloading an application through your browser, Android will ask for permission to install it: Go to Phone Settings &gt; Security (or Apps &amp; Permissions). Look for <strong>&quot;Install Unknown Apps&quot;</strong> and change the permission to Allow for Chrome or your current file manager.
+              <strong className="text-amber-450">Step 2: Enable Unknown Sources —</strong> Once download is complete, tap the notification for the downloaded APK. If this is the first time you are sideloading an application through your browser, Android will ask for permission to install it: Go to Phone Settings &gt; Security (or Apps &amp; Permissions). Look for <strong>&quot;Install Unknown Apps&quot;</strong> and change the permission to Allow for Chrome or your current file manager.
             </div>
             <div>
-              <strong className="text-amber-400">Step 3: Finish the Installation —</strong> Tap <strong>&quot;Install&quot;</strong>. The package installer may take 5-10 seconds to complete the installation. When it’s done, click &quot;Open&quot; to enter the game lobby.
+              <strong className="text-amber-450">Step 3: Finish the Installation —</strong> Tap <strong>&quot;Install&quot;</strong>. The package installer may take 5-10 seconds to complete the installation. When it’s done, click &quot;Open&quot; to enter the game lobby.
             </div>
           </div>
           <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs leading-relaxed">
@@ -525,15 +524,15 @@ export default function Home() {
               <h4 className="font-bold text-white text-base">1. Classic Teen Patti</h4>
               <p className="text-slate-400 leading-relaxed">Classic 3 card poker format of India. Tables seat 5-6 players. You can play blind (without looking at your hand) to keep stakes low, or see your cards (&quot;Seen&quot;) to raise strategically. Pot limits, shows, and side-show mechanics are in line with official tournament guidelines.</p>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1">
+            <div className="p-4 rounded-xl bg-slate-905/60 border border-slate-805 space-y-1">
               <h4 className="font-bold text-white text-base">2. Dragon vs Tiger (Fast 10 Second Rounds)</h4>
               <p className="text-slate-400 leading-relaxed">Great for players wanting quick results and simple rules. The live dealer deals 1 card face up to the Dragon spot and 1 card to the Tiger spot. The side with the higher ranked card wins that round (Kings are high, Aces low).</p>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1">
+            <div className="p-4 rounded-xl bg-slate-905/60 border border-slate-805 space-y-1">
               <h4 className="font-bold text-white text-base">3. Point Rummy (Classic 13 Card)</h4>
               <p className="text-slate-400 leading-relaxed">The format of choice for veteran card players. Place your 13 cards into valid sequences and sets, with at least one pure sequence (no jokers). As this is a game of skill, good hand management and table observation will win out in the long run over pure luck.</p>
             </div>
-            <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1">
+            <div className="p-4 rounded-xl bg-slate-905/60 border border-slate-805 space-y-1">
               <h4 className="font-bold text-white text-base">4. Car Roulette &amp; 7 Up &amp; Down</h4>
               <p className="text-slate-400 leading-relaxed">Fast-paced arcade tables with multipliers from 2x all the way to 40x. These modes are popular for quick entertainment and for testing balanced betting patterns.</p>
             </div>
@@ -543,29 +542,29 @@ export default function Home() {
         {/* 6. Hand Rankings */}
         <div id="hand-rankings" className="space-y-4">
           <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
-            6. Teen Patti Card Hand Rankings (High to Low)
+            6. Teen Patti Card Hand Rankings (Highest to Lowest)
           </h3>
           <p className="text-xs sm:text-sm text-slate-300">
             You must memorise the standard hand rankings before you put real money on any table. One common beginner mistake is not knowing the difference between a pure run and a normal flush:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
             <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
-              <strong className="text-amber-400">1. Set / Trio / Trail (3 of a Kind):</strong> Three cards of the same rank (A-A-A is the best trio, 2-2-2 is the lowest).
+              <strong className="text-amber-450">1. Set / Trio / Trail (3 of a Kind):</strong> Three cards of the same rank (A-A-A is the best trio, 2-2-2 is the lowest).
             </div>
             <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
-              <strong className="text-amber-400">2. Pure Sequence / Straight Flush:</strong> Three cards of the same suit in sequence (e.g. A-2-3 of Spades or K-Q-J of Hearts).
+              <strong className="text-amber-450">2. Pure Sequence / Straight Flush:</strong> Three cards of the same suit in sequence (e.g. A-2-3 of Spades or K-Q-J of Hearts).
             </div>
             <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
-              <strong className="text-amber-400">3. Normal Run / Sequence:</strong> Three consecutive cards of mixed suits (e.g. 4-5-6 of different suits).
+              <strong className="text-amber-455">3. Normal Run / Sequence:</strong> Three consecutive consecutive cards of mixed suits (e.g. 4-5-6 of different suits).
             </div>
             <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
-              <strong className="text-amber-400">4. Colour / Flush:</strong> Any 3 non-consecutive cards of the same suit (e.g. 2-7-K of Diamonds).
+              <strong className="text-amber-455">4. Colour / Flush:</strong> Any 3 non-consecutive cards of the same suit (e.g. 2-7-K of Diamonds).
             </div>
-            <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
-              <strong className="text-amber-400">5. Pair:</strong> Two cards of the same rank and a side card that does not match (e.g. J-J-4).
+            <div className="p-3 bg-slate-950/40 rounded-xl border border-slate-800/80">
+              <strong className="text-amber-455">5. Pair:</strong> Two cards of the same rank and a side card that does not match (e.g. J-J-4).
             </div>
-            <div className="p-3 bg-slate-900/80 rounded-xl border border-slate-800">
-              <strong className="text-amber-400">6. High Card (Lowest Hand):</strong> A hand that does not make any combinations, ranked only by its single highest card (e.g. A-10-3, with Ace being the best card).
+            <div className="p-3 bg-slate-955/40 rounded-xl border border-slate-800/80">
+              <strong className="text-amber-455">6. High Card (Lowest Hand):</strong> A hand that does not make any combinations, ranked only by its single highest card (e.g. A-10-3, with Ace being the best card).
             </div>
           </div>
         </div>
@@ -578,7 +577,7 @@ export default function Home() {
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             Discipline is essential if you want to remain profitable and protect your wallet over the long term. Remember these basic principles:
           </p>
-          <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+          <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-855">
             <li>• <strong>The 3-Step Pattern Rule (Dragon vs Tiger):</strong> Don’t bet against a hot winning streak blindly. If Tiger has landed twice in a row, stick with the momentum. If the streak is broken, take a round to look at the board.</li>
             <li>• <strong>Limit Blind Rounds in Teen Patti:</strong> Never stay blind for more than two betting turns in a row. Peek at your cards (&quot;Seen&quot;). If you have a below average pair of cards, fold early to save your bankroll for better positions.</li>
             <li>• <strong>Set Strict Daily Stop-Loss Limits:</strong> Set your loss limit before you play (say, ₹500 for the session). If you hit your limit, close the app right away. Similarly, if you hit your target profit (e.g. ₹1,500), stop playing and cash out your profits.</li>
@@ -588,16 +587,16 @@ export default function Home() {
 
         {/* 8. Instant Withdrawals */}
         <div id="banking-process" className="space-y-4">
-          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-405 pl-3">
             8. Instant UPI &amp; IMPS Services Bank Withdrawals: The Full Step-by-Step Guide
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             One of the strongest features of the Teen Patti Master platform is fast, transparent cashouts. Here&apos;s how to make a successful withdrawal:
           </p>
-          <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+          <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-855">
             <li>Click the <strong>&quot;Withdraw&quot;</strong> button at the top of the main lobby.</li>
             <li>Select your preferred payout channel: <strong>Bank Account</strong> or <strong>UPI</strong>.</li>
-            <li><strong>UPI Method (Fastest):</strong> Enter your verified UPI Virtual Payment Address (e.g. <code className="text-amber-400">yournumber@paytm</code> or <code className="text-amber-400">username@okhdfcbank</code>). Double check spelling to avoid failed transactions.</li>
+            <li><strong>UPI Method (Fastest):</strong> Enter your verified UPI Virtual Payment Address (e.g. <code className="text-amber-450">yournumber@paytm</code> or <code className="text-amber-450">username@okhdfcbank</code>). Double check spelling to avoid failed transactions.</li>
             <li>Choose or enter your desired withdrawal amount (minimum ₹100, maximum ₹10,000 per request).</li>
             <li>Tap <strong>&quot;Confirm&quot;</strong>.</li>
             <li>You will receive funds in your linked bank account or UPI handle within <strong>5-10 minutes</strong> during regular banking hours.</li>
@@ -606,37 +605,37 @@ export default function Home() {
 
         {/* 9. Account Security */}
         <div id="safety-rules" className="space-y-4">
-          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-405 pl-3">
             9. Account Security, Fair Play &amp; Avoiding Account Bans
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             Keep these strict compliance rules in mind to keep your funds and profile safe and uninterrupted:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm">
-            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
-              <strong className="text-emerald-400">One Account Per Physical Device</strong>
+            <div className="p-4 bg-slate-905/60 rounded-xl border border-slate-805 space-y-1">
+              <strong className="text-emerald-400">One Account Per Device</strong>
               <p className="text-slate-400">Avoid using app cloner utilities, parallel space tools, or virtual machines to manage multiple accounts on one phone. The security architecture registers hardware IMEI identifiers and clones are met with immediate automated bans.</p>
             </div>
-            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
+            <div className="p-4 bg-slate-905/60 rounded-xl border border-slate-805 space-y-1">
               <strong className="text-emerald-400">Shared Wi-Fi, No Collusion</strong>
               <p className="text-slate-400">If you&apos;re trading chips at the same table with multiple devices connected to the same Wi-Fi network, anti-fraud filters will trigger and wallets on both devices will be frozen forever.</p>
             </div>
-            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
-              <strong className="text-emerald-400">Use an Active SIM Card</strong>
-              <p className="text-slate-400">Always register with an active mobile number that can receive SMS OTPs. Withdrawal verification failures may happen with temporary virtual or VoIP numbers.</p>
+            <div className="p-4 bg-slate-905/60 rounded-xl border border-slate-805 space-y-1">
+              <strong className="text-emerald-450">Use an Active SIM Card</strong>
+              <p className="text-slate-404">Always register with an active mobile number that can receive SMS OTPs. Withdrawal verification failures may happen with temporary virtual or VoIP numbers.</p>
             </div>
           </div>
         </div>
 
         {/* 10. Refer & Earn */}
         <div id="refer-earn" className="space-y-4">
-          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-405 pl-3">
             10. Refer &amp; Earn Programme – Make Daily Passive Income Without Playing
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             If you want to make a steady income without risking your own money at the tables, Teen Patti Master has one of the most lucrative affiliate referral systems:
           </p>
-          <ul className="space-y-2 text-xs sm:text-sm text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+          <ul className="space-y-2 text-xs sm:text-sm text-slate-300 bg-[#0f0a1d]/90 p-6 rounded-2xl border border-slate-855">
             <li>• <strong>Step 1:</strong> Click on the &quot;Refer &amp; Earn&quot; icon in the app lobby.</li>
             <li>• <strong>Step 2:</strong> Get your own personalised invite link.</li>
             <li>• <strong>Step 3:</strong> Share your invite link on social channels, Telegram groups, WhatsApp circles, or YouTube videos relevant to your audience.</li>
@@ -647,20 +646,20 @@ export default function Home() {
 
         {/* 11. Troubleshooting */}
         <div id="troubleshooting" className="space-y-4">
-          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
+          <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-405 pl-3">
             11. Common Issue Troubleshooting &amp; Contact Support
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
             <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
-              <strong className="text-amber-400">Withdrawal Status: Processing</strong>
+              <strong className="text-amber-455">Withdrawal Status: Processing</strong>
               <p className="text-slate-400">About 1% of transactions could be pending because of brief maintenance durations or clearing cycles on banking servers. Please allow up to 24 hours. The banking system will either pay directly into your account or refund the balance into your game wallet.</p>
             </div>
-            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-800 space-y-1">
-              <strong className="text-amber-400">&quot;App Not Installed&quot; Error:</strong>
-              <p className="text-slate-400">Most often, this is because your device storage is full or a conflicting APK build is already on your phone. Fully uninstall old versions, reboot your device, and install the new APK file you downloaded.</p>
+            <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-805 space-y-1">
+              <strong className="text-amber-455">&quot;App Not Installed&quot; Error:</strong>
+              <p className="text-slate-455">Most often, this is because your device storage is full or a conflicting APK build is already on your phone. Fully uninstall old versions, reboot your device, and install the new APK file you downloaded.</p>
             </div>
           </div>
-          <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300">
+          <div className="p-4 rounded-xl bg-slate-905 border border-slate-805 text-xs text-slate-300">
             <strong>24×7 Live Customer Care:</strong> Tap on the &quot;Support&quot; button on the right side of the main lobby. Send your Order ID and transaction screenshots. Live customer reps respond in minutes, typically.
           </div>
         </div>
@@ -675,15 +674,15 @@ export default function Home() {
             {faqData.map((item, idx) => (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-800 bg-slate-900/60 overflow-hidden transition"
+                className="rounded-xl border border-slate-805 bg-slate-905/65 overflow-hidden transition"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full flex items-center justify-between p-4 text-left font-bold text-xs sm:text-sm text-white hover:text-amber-400 transition"
+                  className="w-full flex items-center justify-between p-4 text-left font-bold text-xs sm:text-sm text-white hover:text-amber-450 transition"
                 >
                   <span>{item.q}</span>
-                  <span className="text-base text-amber-400 font-black ml-2">
+                  <span className="text-base text-amber-455 font-black ml-2">
                     {openFaq === idx ? '−' : '+'}
                   </span>
                 </button>
@@ -699,7 +698,7 @@ export default function Home() {
         </div>
 
         {/* Bottom CTA Box */}
-        <div className="p-8 rounded-3xl bg-gradient-to-r from-emerald-950/80 via-slate-900 to-indigo-950/80 border border-emerald-500/40 text-center space-y-4 shadow-2xl">
+        <div className="p-8 rounded-3xl bg-gradient-to-r from-emerald-955/80 via-slate-950 to-indigo-955/80 border border-emerald-500/40 text-center space-y-4 shadow-2xl">
           <h3 className="text-xl sm:text-2xl font-black text-white">
             Ready to Play Teen Patti Master?
           </h3>
@@ -709,7 +708,7 @@ export default function Home() {
           <div className="pt-2">
             <a
               href={DOWNLOAD_URL}
-              className="inline-block py-3.5 px-8 bg-gradient-to-r from-emerald-400 via-green-400 to-emerald-500 hover:brightness-110 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider rounded-2xl shadow-xl shadow-emerald-500/30 transition active:scale-95"
+              className="inline-block py-3.5 px-8 bg-gradient-to-r from-emerald-400 via-green-450 to-emerald-550 hover:brightness-110 text-slate-955 font-black text-xs sm:text-sm uppercase tracking-wider rounded-2xl shadow-xl shadow-emerald-555/35 transition active:scale-95"
             >
               ⚡ Download Teen Patti Master APK (64 MB)
             </a>
