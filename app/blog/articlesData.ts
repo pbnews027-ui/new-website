@@ -93,5 +93,88 @@ export const ARTICLES_DATA: ArticleItem[] = [
         ]
       }
     ]
+  },
+  // --- Nava SEO Ranking Articles ---
+  {
+    slug: 'teen-patti-master-withdrawal-problem-pending-solution',
+    title: 'Teen Patti Master Withdrawal Pending Solution: Fix Failed Cashout (2026)',
+    category: 'Troubleshooting',
+    desc: 'Is your withdrawal stuck in pending or returned status? Learn the exact 5-minute fix to get cash credited into your bank or UPI.',
+    readTime: '4 min',
+    publishedAt: '2026-10-08',
+    image: '/classic-teen-patti.webp',
+    content: [
+      {
+        heading: 'Common Reasons Behind Pending Withdrawals',
+        points: [
+          'IMPS banking gateway delay during bank holidays or night clearance cycles.',
+          'Incorrect UPI Virtual Payment Address (VPA) syntax or missing bank extension.',
+          'Unmet 1x wagering turnover on promotional bonus balances.',
+          'Security lock triggered by running app cloner tools on the same device.'
+        ]
+      },
+      {
+        heading: 'How to Resolve Pending Issues Quickly',
+        points: [
+          'Allow 15-30 minutes for banking servers to automatically sync the payout.',
+          'If marked as returned, double-check your account details and re-apply using instant UPI.',
+          'Copy your transaction Order ID and send it to in-game 24x7 customer support for manual clearance.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'teen-patti-master-old-version-download',
+    title: 'Teen Patti Master Old Version Download (v4.5, v4.9 & v5.1 APK)',
+    category: 'APK Guide',
+    desc: 'Experiencing lag or crash errors with the new version? Download stable, tested older versions for 2GB RAM budget smartphones.',
+    readTime: '3 min',
+    publishedAt: '2026-10-08',
+    image: '/teen-patti-master.webp',
+    content: [
+      {
+        heading: 'Why Many Players Prefer Older Builds',
+        points: [
+          'Consumes less RAM and battery on budget smartphones running Android 6 to 9.',
+          'Cleaner, lightweight lobby interface with minimal animations.',
+          'Zero lag during high-stakes Dragon vs Tiger and 3 Patti card tables.'
+        ]
+      },
+      {
+        heading: 'Safe Sideloading Instructions',
+        points: [
+          'Uninstall any corrupted versions before installing older build files.',
+          'Keep automatic updates disabled to prevent forced upgrades.',
+          'Download only verified clean packages to avoid malware clones.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'teen-patti-master-vip-bonus-tricks',
+    title: 'Teen Patti Master VIP Level Guide: Unlock Daily Free Cash Rewards',
+    category: 'Bonus Guide',
+    desc: 'Master the VIP 1 to VIP 10 progression tiers to claim weekly rewards, monthly cashbacks, and priority withdrawals.',
+    readTime: '5 min',
+    publishedAt: '2026-10-08',
+    image: '/13-card-rummy.webp',
+    content: [
+      {
+        heading: 'Exclusive Benefits of VIP Membership',
+        points: [
+          'Daily login bonus multipliers that increase with each higher VIP rank.',
+          'Weekly and monthly cashback payouts based on your total table gameplay turnover.',
+          'Priority withdrawal processing that bypasses regular bank queuing.'
+        ]
+      },
+      {
+        heading: 'Best Strategy to Upgrade VIP Level Fast',
+        points: [
+          'Play low-risk point rummy rounds to rack up wagering turnover quickly.',
+          'Take advantage of deposit match promotions to increase tier points.',
+          'Claim your daily VIP calendar check-ins regularly without missing a day.'
+        ]
+      }
+    ]
   }
 ];
