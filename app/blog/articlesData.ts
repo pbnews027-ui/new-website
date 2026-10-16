@@ -368,7 +368,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     readTime: "8 min",
     publishedAt: "2026-10-08",
     updatedAt: "2026-10-16",
-    image: "/teen-patti-master.webp",
+    image: "/Teen-Patti-Master-Star.webp",
     intro: [
       "Every time Teen Patti Master rolls out an update, a group of players starts searching for the old version. The reasons are usually the same: the new build feels heavier, the phone heats up, a favourite button has moved, or the app crashes on launch. If that sounds familiar, you are not alone.",
       "Before you uninstall anything, it helps to understand what really happens when you go back to an older APK. Some old versions run fine for weeks. Others stop logging in the moment the server is upgraded. And a few \"old version\" files floating around the internet are not the real app at all. This guide covers the whole picture — why people downgrade, whether old builds still work, how to install one without putting your phone or account at risk, and how to fix most problems without downgrading at all.",
@@ -1731,7 +1731,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "Teen Patti Master update nahi ho raha, \"App not installed\", parse error ya update ke baad crash? Har error ka kaaran aur step-by-step solution aasan Hindi mein.",
     readTime: "7 min",
     publishedAt: "2026-10-16",
-    image: "/teen-patti-master-2026.webp",
+    image: "/teen-patti-master-anroid.webp",
     intro: [
       "App kholte hi \"New version available, please update\" ka message aaya, aapne update dabaya — aur phir \"App not installed\" likha aa gaya. Ya download 99% par atak gaya. Ya update ho gaya lekin ab app khulte hi band ho jaata hai. Teen Patti Master ke bahut se players ko yeh problem aati hai, khaaskar budget phones par.",
       "Is guide mein hum update se judi har aam samasya ka kaaran aur uska solution step by step batayenge. Zyadatar mamlon mein in steps se 5–10 minute mein app phir se chal padta hai, aur aapka balance bhi surakshit rehta hai.",
