@@ -19,16 +19,16 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'https://www.bolaseo.com/teen-patti-master-2026.webp',
-        width: 1610,
-        height: 1026,
+        url: 'https://www.bolaseo.com/teen-patti-master-51-bonus.webp',
+        width: 512,
+        height: 512,
         alt: 'Teen Patti Master APK 2026 Download and Bonus Review',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['https://www.bolaseo.com/teen-patti-master-2026.webp'],
+    images: ['https://www.bolaseo.com/teen-patti-master-51-bonus.webp'],
   },
 };
 
@@ -40,7 +40,7 @@ export default function TeenPattiMasterDownload2026() {
     headline: 'Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus & Withdrawal Review',
     description:
       'Complete review and clean setup guide for Teen Patti Master APK (v5.2) with ₹5,100 signup bonus steps and UPI withdrawal methods.',
-    image: 'https://www.bolaseo.com/teen-patti-master-2026.webp',
+    image: 'https://www.bolaseo.com/teen-patti-master-51-bonus.webp',
     author: {
       '@type': 'Organization',
       name: 'Teen Patti Master Guide Editorial Team',
@@ -135,7 +135,7 @@ export default function TeenPattiMasterDownload2026() {
         {/* Featured Image */}
         <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-amber-500/20 bg-slate-950 shadow-2xl">
           <Image
-            src="/teen-patti-master-2026.webp"
+            src="/teen-patti-master-51-bonus.webp"
             alt="Teen Patti Master APK 2026 Official Download and Bonus Review"
             fill
             sizes="(max-width: 768px) 100vw, 850px"

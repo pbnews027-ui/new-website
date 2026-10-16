@@ -30,7 +30,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: 'Want to play Teen Patti Master without lag or errors? Here is the exact way to download the genuine 64 MB package on any Android phone.',
     readTime: '3 min',
     publishedAt: '2026-10-06',
-    image: '/teen-patti-master.webp',
+    image: '/teen-patti-master-51-bonus.webp',
     content: [
       {
         heading: 'Before You Download: Quick Tips',
@@ -114,7 +114,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     readTime: "8 min",
     publishedAt: "2026-10-08",
     updatedAt: "2026-10-16",
-    image: "/teen-patti-master-51-bonus.webp",
+    image: "/teen-patti-master-2026.webp",
     intro: [
       "आपने Teen Patti Master से पैसे निकालने की request डाली, स्क्रीन पर \"Pending\" लिखा आया, और फिर घंटों तक कुछ नहीं हुआ। ऐसे में घबराहट होना स्वाभाविक है, ख़ासकर तब जब रकम बड़ी हो।",
       "राहत की बात यह है कि ज़्यादातर मामलों में pending withdrawal का मतलब पैसा डूबना नहीं होता। अक्सर इसके पीछे बैंक सर्वर की देरी, गलत UPI ID या कोई अधूरी शर्त जैसा मामूली कारण होता है। इस गाइड में हम आसान भाषा में बताएँगे कि withdrawal क्यों अटकता है, कितना इंतज़ार करना ठीक है, और समस्या को सही तरीके से कैसे सुलझाएँ। साथ ही उन धोखेबाज़ों से बचने के तरीके भी जानेंगे जो ऐसे ही परेशान users को निशाना बनाते हैं।",
