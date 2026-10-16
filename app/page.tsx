@@ -85,9 +85,10 @@ export default function Home() {
     })),
   };
 
-  const recentArticles = [...ARTICLES_DATA]
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
-    .slice(0, 6);
+  const sortedArticles = [...ARTICLES_DATA].sort((a, b) =>
+    b.publishedAt.localeCompare(a.publishedAt)
+  );
+  const recentArticles = sortedArticles.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-[#070b14] text-slate-100 font-sans antialiased relative selection:bg-amber-400 selection:text-black overflow-x-hidden pb-16">
@@ -293,6 +294,24 @@ export default function Home() {
             </Link>
           ))}
         </div>
+
+        {/* Every guide linked from the home page so crawlers find them all */}
+        <nav aria-label="All Teen Patti Master guides" className="mt-10 p-6 rounded-2xl bg-slate-900/40 border border-slate-800">
+          <h3 className="text-lg font-black text-white mb-4">All Teen Patti Master Guides</h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5 text-sm">
+            {sortedArticles.map((art) => (
+              <li key={art.slug} className="flex items-start gap-2">
+                <span className="text-amber-400">›</span>
+                <Link href={`/blog/${art.slug}`} className="text-slate-300 hover:text-amber-400 transition">
+                  {art.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href="/blog" className="inline-block mt-5 text-xs font-bold text-emerald-400 hover:underline">
+            View all guides on the blog →
+          </Link>
+        </nav>
       </section>
 
       {/* Game Cards Section */}
