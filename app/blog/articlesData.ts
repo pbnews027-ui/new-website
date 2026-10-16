@@ -112,7 +112,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: 'Is your withdrawal stuck in pending or returned status? Learn the exact 5-minute fix to get cash credited into your bank or UPI.',
     readTime: '4 min',
     publishedAt: '2026-10-08',
-    image: '/classic-teen-patti.webp',
+    image: '/teen-patti-master-51-bonus.webp',
     content: [
       {
         heading: 'Common Reasons Behind Pending Withdrawals',
