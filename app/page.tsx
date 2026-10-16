@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FaqSection from '@/components/FaqSection';
 import { ARTICLES_DATA } from './blog/articlesData';
+import { DOWNLOAD_URL, SITE_URL } from '@/lib/site';
 
 // 1. Google SEO Search Engine Meta Tags
 export const metadata: Metadata = {
@@ -11,21 +12,25 @@ export const metadata: Metadata = {
   description:
     'Download Teen Patti Master APK latest version v5.2 for Android. Get instant ₹5,100 welcome bonus, 100% safe UPI withdrawals, and play 30+ card games on bolaseo.com.',
   alternates: {
-    canonical: 'https://bolaseo.com',
+    canonical: '/',
   },
   openGraph: {
     title: 'Teen Patti Master APK Download - Official 2026 Edition',
     description:
       'Play 30+ tables and withdraw real money directly to your UPI/Bank. 100% fair play RNG certified.',
-    url: 'https://bolaseo.com',
-    siteName: 'Teen Patti Master Official',
+    url: '/',
     type: 'website',
+    images: [
+      {
+        url: '/teen-patti-master-2026.webp',
+        width: 1610,
+        height: 1026,
+        alt: 'Teen Patti Master 2026 App Guide',
+      },
+    ],
   },
 };
 
-// Global Download Link
-const DOWNLOAD_URL =
-  'https://d3q91a2xq73l50.cloudfront.net/cg/files/z117yxg9vxe7n3mp6u3m5x7p/TeenPattiMaster_ya5rcx.apk';
 
 const faqData = [
   {
@@ -58,15 +63,12 @@ export default function Home() {
     name: 'Teen Patti Master',
     operatingSystem: 'ANDROID',
     applicationCategory: 'GameApplication',
+    url: SITE_URL,
+    image: `${SITE_URL}/teen-patti-master.webp`,
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'INR',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '105400',
     },
   };
 
@@ -83,7 +85,9 @@ export default function Home() {
     })),
   };
 
-  const recentArticles = ARTICLES_DATA ? ARTICLES_DATA.slice(0, 6) : [];
+  const recentArticles = [...ARTICLES_DATA]
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, 6);
 
   return (
     <div className="min-h-screen bg-[#070b14] text-slate-100 font-sans antialiased relative selection:bg-amber-400 selection:text-black overflow-x-hidden pb-16">
@@ -134,7 +138,7 @@ export default function Home() {
                     fill
                     sizes="80px"
                     className="object-contain p-1 rounded-lg"
-                    priority
+                    loading="eager"
                   />
                 </div>
                 <a
@@ -212,7 +216,6 @@ export default function Home() {
                   fill
                   sizes="(max-width: 1024px) 100vw, 360px"
                   className="object-contain p-2 rounded-xl transition-transform duration-500 hover:scale-[1.02]"
-                  priority
                 />
               </div>
 
@@ -274,7 +277,7 @@ export default function Home() {
                   <span className="text-amber-400 font-bold px-2 py-0.5 rounded bg-amber-400/10 border border-amber-400/20">
                     {art.category}
                   </span>
-                  <span className="text-slate-500">⏱️ {art.readTime}</span>
+                  <span className="text-slate-400">⏱️ {art.readTime}</span>
                 </div>
                 <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition line-clamp-2">
                   {art.title}

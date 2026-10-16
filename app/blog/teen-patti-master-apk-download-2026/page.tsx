@@ -2,26 +2,36 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { DOWNLOAD_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus & Withdrawal Review',
   description:
     '2026 complete review and download guide of Teen Patti Master APK. Milestone Bonus Steps ₹5,100 Claim UPI Cashout Steps Real Winning Strategies.',
   alternates: {
-    canonical: 'https://bolaseo.com/blog/teen-patti-master-apk-download-2026',
+    canonical: 'https://www.bolaseo.com/blog/teen-patti-master-apk-download-2026',
   },
   openGraph: {
     title: 'Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus & Withdrawal Review',
     description:
       'Verified guide for Teen Patti Master APK v5.2 download, ₹5,100 milestone unlock rules, and direct UPI bank withdrawal proofs.',
-    url: 'https://bolaseo.com/blog/teen-patti-master-apk-download-2026',
-    siteName: 'Teen Patti Master Official',
+    url: 'https://www.bolaseo.com/blog/teen-patti-master-apk-download-2026',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.bolaseo.com/teen-patti-master-2026.webp',
+        width: 1610,
+        height: 1026,
+        alt: 'Teen Patti Master APK 2026 Download and Bonus Review',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['https://www.bolaseo.com/teen-patti-master-2026.webp'],
   },
 };
 
-const DOWNLOAD_URL =
-  'https://d3q91a2xq73l50.cloudfront.net/cg/files/z117yxg9vxe7n3mp6u3m5x7p/TeenPattiMaster_ya5rcx.apk';
 
 export default function TeenPattiMasterDownload2026() {
   const schemaArticle = {
@@ -30,22 +40,16 @@ export default function TeenPattiMasterDownload2026() {
     headline: 'Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus & Withdrawal Review',
     description:
       'Complete review and clean setup guide for Teen Patti Master APK (v5.2) with ₹5,100 signup bonus steps and UPI withdrawal methods.',
+    image: 'https://www.bolaseo.com/teen-patti-master-2026.webp',
     author: {
       '@type': 'Organization',
-      name: 'Teen Patti Master Official Team',
-      url: 'https://bolaseo.com',
+      name: 'Teen Patti Master Guide Editorial Team',
+      url: 'https://www.bolaseo.com',
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Teen Patti Master',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://bolaseo.com/teen-patti-master-2026.webp',
-      },
-    },
+    publisher: { '@id': 'https://www.bolaseo.com/#organization' },
     datePublished: '2026-10-08T07:30:00.000Z',
     dateModified: '2026-10-08T07:30:00.000Z',
-    mainEntityOfPage: 'https://bolaseo.com/blog/teen-patti-master-apk-download-2026',
+    mainEntityOfPage: 'https://www.bolaseo.com/blog/teen-patti-master-apk-download-2026',
   };
 
   const schemaFaq = {
@@ -71,6 +75,16 @@ export default function TeenPattiMasterDownload2026() {
     ],
   };
 
+  const schemaBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bolaseo.com' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.bolaseo.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Teen Patti Master APK Download 2026', item: 'https://www.bolaseo.com/blog/teen-patti-master-apk-download-2026' },
+    ],
+  };
+
   return (
     <article className="min-h-screen bg-[#070b14] text-slate-200 font-sans antialiased selection:bg-amber-400 selection:text-black py-10 px-4 sm:px-6 lg:px-8">
       <script
@@ -81,6 +95,10 @@ export default function TeenPattiMasterDownload2026() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
 
       <div className="max-w-4xl mx-auto space-y-10">
         {/* Breadcrumb Navigation */}
@@ -89,7 +107,9 @@ export default function TeenPattiMasterDownload2026() {
             Home
           </Link>
           <span>/</span>
-          <span className="text-slate-400">Guides</span>
+          <Link href="/blog" className="text-amber-400 hover:underline">
+            Guides
+          </Link>
           <span>/</span>
           <span className="text-slate-300 truncate">Teen Patti Master APK Download 2026</span>
         </nav>
@@ -104,7 +124,7 @@ export default function TeenPattiMasterDownload2026() {
             Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus &amp; Withdrawal Review
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 pt-2">
-            <span>By <strong>Official Gaming Desk</strong></span>
+            <span>By <strong>Teen Patti Master Guide Editorial Team</strong></span>
             <span>•</span>
             <span>Updated: October 2026</span>
             <span>•</span>
@@ -120,7 +140,7 @@ export default function TeenPattiMasterDownload2026() {
             fill
             sizes="(max-width: 768px) 100vw, 850px"
             className="object-contain p-4 transition-transform duration-500 hover:scale-[1.02]"
-            priority
+            preload
           />
         </div>
 

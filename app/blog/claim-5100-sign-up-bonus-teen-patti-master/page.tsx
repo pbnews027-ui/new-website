@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { DOWNLOAD_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Master: Claim ₹5,100 Sign-Up Bonus & Instant UPI Cashout (2026)',
@@ -17,17 +18,16 @@ export const metadata: Metadata = {
     'Teen Patti Master APK download',
   ],
   alternates: {
-    canonical: 'https://bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
+    canonical: 'https://www.bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
   },
   openGraph: {
     title: 'Teen Patti Master: Claim ₹5,100 Sign-Up Bonus & Instant UPI Cashout (2026)',
     description:
       'Master the ₹5,100 welcome bonus on Teen Patti Master. Learn verified turnover calculation, instant ₹51 signup credit, and fast bank withdrawals.',
-    url: 'https://bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
-    siteName: 'Teen Patti Master Official',
+    url: 'https://www.bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
     images: [
       {
-        url: 'https://bolaseo.com/teen-patti-master-51-bonus.webp',
+        url: 'https://www.bolaseo.com/teen-patti-master-51-bonus.webp',
         width: 512,
         height: 512,
         alt: 'Teen Patti Master 5100 Bonus Claim and UPI Withdrawal',
@@ -40,12 +40,10 @@ export const metadata: Metadata = {
     title: 'Teen Patti Master: Claim ₹5,100 Sign-Up Bonus & Instant UPI Cashout',
     description:
       'Verified guide on unlocking the ₹5,100 bonus ladder and ₹51 instant mobile verification on Teen Patti Master.',
-    images: ['https://bolaseo.com/teen-patti-master-51-bonus.webp'],
+    images: ['https://www.bolaseo.com/teen-patti-master-51-bonus.webp'],
   },
 };
 
-const DOWNLOAD_URL =
-  'https://d3q91a2xq73l50.cloudfront.net/cg/files/z117yxg9vxe7n3mp6u3m5x7p/TeenPattiMaster_ya5rcx.apk';
 
 export default function Claim5100BonusPage() {
   const schemaArticle = {
@@ -54,23 +52,16 @@ export default function Claim5100BonusPage() {
     headline: 'Teen Patti Master: Claim ₹5,100 Sign-Up Bonus & Instant UPI Cashout (2026)',
     description:
       'Complete operational guide to claim and unlock the ₹5,100 sign-up bonus on Teen Patti Master with turnover rules and fast UPI cashouts.',
-    image: 'https://bolaseo.com/teen-patti-master-51-bonus.webp',
+    image: 'https://www.bolaseo.com/teen-patti-master-51-bonus.webp',
     author: {
       '@type': 'Organization',
-      name: 'Teen Patti Master Editorial Desk',
-      url: 'https://bolaseo.com',
+      name: 'Teen Patti Master Guide Editorial Team',
+      url: 'https://www.bolaseo.com',
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Teen Patti Master',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://bolaseo.com/teen-patti-master-51-bonus.webp',
-      },
-    },
+    publisher: { '@id': 'https://www.bolaseo.com/#organization' },
     datePublished: '2026-10-08T09:00:00.000Z',
     dateModified: '2026-10-08T09:00:00.000Z',
-    mainEntityOfPage: 'https://bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
+    mainEntityOfPage: 'https://www.bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
   };
 
   const schemaFaq = {
@@ -120,6 +111,16 @@ export default function Claim5100BonusPage() {
     ],
   };
 
+  const schemaBreadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.bolaseo.com' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.bolaseo.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Claim ₹5,100 Sign-Up Bonus', item: 'https://www.bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master' },
+    ],
+  };
+
   return (
     <article className="min-h-screen bg-[#070b14] text-slate-200 font-sans antialiased selection:bg-amber-400 selection:text-black py-10 px-4 sm:px-6 lg:px-8">
       <script
@@ -130,6 +131,10 @@ export default function Claim5100BonusPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }}
+      />
 
       <div className="max-w-4xl mx-auto space-y-10">
         {/* Navigation Breadcrumb */}
@@ -138,7 +143,7 @@ export default function Claim5100BonusPage() {
             Home
           </Link>
           <span>/</span>
-          <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-400 hover:underline">
+          <Link href="/blog" className="text-amber-400 hover:underline">
             Guides
           </Link>
           <span>/</span>
@@ -155,7 +160,7 @@ export default function Claim5100BonusPage() {
             Teen Patti Master: Claim ₹5,100 Sign-Up Bonus &amp; Instant UPI Cashout (2026)
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 pt-2">
-            <span>By <strong>Official Gaming Desk</strong></span>
+            <span>By <strong>Teen Patti Master Guide Editorial Team</strong></span>
             <span>•</span>
             <span>Published: October 2026</span>
             <span>•</span>
@@ -172,7 +177,7 @@ export default function Claim5100BonusPage() {
               width={512}
               height={512}
               className="object-contain p-4 transition-transform duration-500 hover:scale-[1.02]"
-              priority
+              preload
             />
           </div>
         </div>

@@ -1,161 +1,95 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
+import type { Metadata, Viewport } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import SiteHeader from '@/components/SiteHeader';
+import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from '@/lib/site';
 import './globals.css';
 
-const DOWNLOAD_URL =
-  'https://d3q91a2xq73l50.cloudfront.net/cg/files/z117yxg9vxe7n3mp6u3m5x7p/TeenPattiMaster_ya5rcx.apk';
+// Site-wide SEO defaults. Pages override title/description/canonical.
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'Teen Patti Master APK Download 2026 - Install Guide & Tips',
+    template: '%s',
+  },
+  applicationName: SITE_NAME,
+  openGraph: {
+    siteName: SITE_NAME,
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: '/teen-patti-master-2026.webp',
+        width: 1610,
+        height: 1026,
+        alt: 'Teen Patti Master 2026 App Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/teen-patti-master-2026.webp'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: '#040711',
+};
+
+const siteSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/icon.png`,
+        width: 512,
+        height: 512,
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}/#website`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      inLanguage: 'en-IN',
+      publisher: { '@id': `${SITE_URL}/#organization` },
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [headerLogoError, setHeaderLogoError] = useState(false);
-  const [navMenuOpen, setNavMenuOpen] = useState(false);
-
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-[#040711] text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-amber-400 selection:text-black relative">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+        />
+
         {/* =========================================================================
             1. TOP GLOBAL HEADER
         ========================================================================= */}
-        <header className="sticky top-0 z-40 bg-[#040711]/90 backdrop-blur-xl px-4 lg:px-12 py-3 border-b border-slate-800/80">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            {/* Brand Logo */}
-            <a href="/" className="flex items-center gap-2.5 group">
-              <div className="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-[#1c122c] to-[#0c0517] border border-amber-400/40 flex items-center justify-center p-1 shrink-0 shadow-lg shadow-amber-500/10">
-                {!headerLogoError ? (
-                  <img
-                    src="/teen-patti-master.webp"
-                    alt="Teen Patti Master Logo"
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform"
-                    onError={() => setHeaderLogoError(true)}
-                  />
-                ) : (
-                  <span className="text-amber-400 font-black text-xl">♠</span>
-                )}
-              </div>
-              <div>
-                <span className="text-base sm:text-lg font-black tracking-tight text-white block leading-none">
-                  TEEN PATTI <span className="text-amber-400">MASTER</span>
-                </span>
-                <span className="text-[10px] text-gray-400 font-semibold tracking-wider uppercase">
-                  OFFICIAL GAMING PORTAL
-                </span>
-              </div>
-            </a>
-
-            {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-8 text-[13px] font-semibold tracking-wide text-slate-300">
-              <a href="/" className="text-amber-400 hover:text-amber-300 transition">
-                Home
-              </a>
-              <a href="/#games" className="hover:text-amber-400 transition">
-                Game Modes
-              </a>
-              <a href="/#article" className="hover:text-amber-400 transition">
-                Guides
-              </a>
-              <a href="/#specs" className="hover:text-amber-400 transition">
-                Specs
-              </a>
-              <a href="/#rankings" className="hover:text-amber-400 transition">
-                Card Rules
-              </a>
-              <a href="/#faq" className="hover:text-amber-400 transition">
-                Helpdesk
-              </a>
-            </nav>
-
-            {/* Right Action Button in Header */}
-            <div className="flex items-center gap-2.5 sm:gap-3">
-              <a
-                href={DOWNLOAD_URL}
-                className="px-4 sm:px-5 py-2.5 bg-gradient-to-r from-emerald-400 via-green-400 to-emerald-500 hover:from-emerald-300 hover:to-green-400 text-slate-950 rounded-xl text-xs font-black tracking-wider uppercase shadow-md shadow-emerald-500/30 active:scale-95 transition"
-              >
-                DOWNLOAD
-              </a>
-
-              <button
-                type="button"
-                onClick={() => setNavMenuOpen(!navMenuOpen)}
-                aria-label="Toggle navigation menu"
-                className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 hover:text-amber-400 active:scale-95 transition"
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                  viewBox="0 0 24 24"
-                >
-                  {navMenuOpen ? (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  ) : (
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  )}
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Quick Dropdown Tray */}
-          {navMenuOpen && (
-            <div className="mt-3 pt-3 border-t border-slate-800/80 max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-xs font-bold text-slate-300">
-              <a
-                href="/"
-                onClick={() => setNavMenuOpen(false)}
-                className="px-3 py-2 text-center rounded-xl bg-slate-900/80 hover:text-amber-400 hover:bg-slate-800 border border-slate-800 transition"
-              >
-                Home
-              </a>
-              <a
-                href="/#games"
-                onClick={() => setNavMenuOpen(false)}
-                className="px-3 py-2 text-center rounded-xl bg-slate-900/80 hover:text-amber-400 hover:bg-slate-800 border border-slate-800 transition"
-              >
-                Game Modes
-              </a>
-              <a
-                href="/#article"
-                onClick={() => setNavMenuOpen(false)}
-                className="px-3 py-2 text-center rounded-xl bg-slate-900/80 hover:text-amber-400 hover:bg-slate-800 border border-slate-800 transition"
-              >
-                Guides
-              </a>
-              <a
-                href="/#specs"
-                onClick={() => setNavMenuOpen(false)}
-                className="px-3 py-2 text-center rounded-xl bg-slate-900/80 hover:text-amber-400 hover:bg-slate-800 border border-slate-800 transition"
-              >
-                Specs
-              </a>
-              <a
-                href="/#rankings"
-                onClick={() => setNavMenuOpen(false)}
-                className="px-3 py-2 text-center rounded-xl bg-slate-900/80 hover:text-amber-400 hover:bg-slate-800 border border-slate-800 transition"
-              >
-                Card Rules
-              </a>
-              <a
-                href="/#faq"
-                onClick={() => setNavMenuOpen(false)}
-                className="px-3 py-2 text-center rounded-xl bg-slate-900/80 hover:text-amber-400 hover:bg-slate-800 border border-slate-800 transition"
-              >
-                FAQ Support
-              </a>
-            </div>
-          )}
-        </header>
+        <SiteHeader />
 
         {/* =========================================================================
             2. PAGE CONTENT (Badha Blogs, Pages ane Articles)
@@ -171,28 +105,27 @@ export default function RootLayout({
             <div className="lg:col-span-4 space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl overflow-hidden bg-slate-900 border border-amber-400/40 p-1 flex items-center justify-center shrink-0">
-                  <img
+                  <Image
                     src="/teen-patti-master.webp"
                     alt="Teen Patti Master Logo"
+                    width={32}
+                    height={32}
                     className="w-full h-full object-contain"
-                    onError={(e) => {
-                      (e.target as HTMLElement).style.display = 'none';
-                    }}
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-amber-400 tracking-tight flex items-center gap-1.5">
+                  <p className="text-xl font-black text-amber-400 tracking-tight flex items-center gap-1.5">
                     Teen Patti Master
                     <span className="text-emerald-400 text-sm">♠</span>
-                  </h3>
+                  </p>
                   <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider block">
-                    Verified Digital Gaming Hub
+                    Independent Gaming Guide
                   </span>
                 </div>
               </div>
 
               <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-                A premier independent analytical portal committed to fair-play card dynamics, probability calculation, verified Android APK release audits, and safe digital entertainment standards.
+                An independent guide portal covering card game rules, hand probabilities, Android APK install help, and safe, responsible digital entertainment.
               </p>
 
               {/* Social Channels */}
@@ -218,69 +151,69 @@ export default function RootLayout({
 
             {/* Col 2: Games Lobby Links */}
             <div className="lg:col-span-2 space-y-3">
-              <h4 className="text-xs font-black tracking-widest text-white uppercase border-l-2 border-emerald-400 pl-2">
+              <p className="text-xs font-black tracking-widest text-white uppercase border-l-2 border-emerald-400 pl-2">
                 GAMES
-              </h4>
+              </p>
               <ul className="space-y-2 text-xs text-slate-400 font-medium">
                 <li>
-                  <a href="/#games" className="hover:text-amber-400 transition">Classic Teen Patti</a>
+                  <Link href="/#games" className="hover:text-amber-400 transition">Classic Teen Patti</Link>
                 </li>
                 <li>
-                  <a href="/#games" className="hover:text-amber-400 transition">13-Card Rummy</a>
+                  <Link href="/#games" className="hover:text-amber-400 transition">13-Card Rummy</Link>
                 </li>
                 <li>
-                  <a href="/#games" className="hover:text-amber-400 transition">Dragon vs Tiger</a>
+                  <Link href="/#games" className="hover:text-amber-400 transition">Dragon vs Tiger</Link>
                 </li>
                 <li>
-                  <a href="/#games" className="hover:text-amber-400 transition">AK47 &amp; Muflis Tables</a>
+                  <Link href="/#games" className="hover:text-amber-400 transition">AK47 &amp; Muflis Tables</Link>
                 </li>
                 <li>
-                  <a href="/#games" className="hover:text-amber-400 transition">Point Rummy Arena</a>
+                  <Link href="/#games" className="hover:text-amber-400 transition">Point Rummy Arena</Link>
                 </li>
               </ul>
             </div>
 
             {/* Col 3: Strategy & Academy */}
             <div className="lg:col-span-2 space-y-3">
-              <h4 className="text-xs font-black tracking-widest text-white uppercase border-l-2 border-emerald-400 pl-2">
+              <p className="text-xs font-black tracking-widest text-white uppercase border-l-2 border-emerald-400 pl-2">
                 LEARN
-              </h4>
+              </p>
               <ul className="space-y-2 text-xs text-slate-400 font-medium">
                 <li>
-                  <a href="/#article" className="hover:text-amber-400 transition">Strategy Articles</a>
+                  <Link href="/blog" className="hover:text-amber-400 transition">Strategy Articles</Link>
                 </li>
                 <li>
-                  <a href="/#rankings" className="hover:text-amber-400 transition">Card Hand Strengths</a>
+                  <Link href="/#hand-rankings" className="hover:text-amber-400 transition">Card Hand Strengths</Link>
                 </li>
                 <li>
-                  <a href="/#games" className="hover:text-amber-400 transition">Pure Sequences Guide</a>
+                  <Link href="/#games" className="hover:text-amber-400 transition">Pure Sequences Guide</Link>
                 </li>
                 <li>
-                  <a href="/#specs" className="hover:text-amber-400 transition">Free Practice Modes</a>
+                  <Link href="/#app-specs" className="hover:text-amber-400 transition">Free Practice Modes</Link>
                 </li>
                 <li>
-                  <a href="/#art-banking" className="hover:text-amber-400 transition">Smart Bankroll Rules</a>
+                  <Link href="/#banking-process" className="hover:text-amber-400 transition">Smart Bankroll Rules</Link>
                 </li>
               </ul>
             </div>
 
             {/* Col 4: Trust & Site Support */}
             <div className="lg:col-span-2 space-y-3">
-              <h4 className="text-xs font-black tracking-widest text-white uppercase border-l-2 border-emerald-400 pl-2">
+              <p className="text-xs font-black tracking-widest text-white uppercase border-l-2 border-emerald-400 pl-2">
                 SITE
-              </h4>
+              </p>
               <ul className="space-y-2 text-xs text-slate-400 font-medium">
                 <li>
-                  <a href="/#specs" className="hover:text-amber-400 transition">Platform About Us</a>
+                  <Link href="/#app-specs" className="hover:text-amber-400 transition">Platform About Us</Link>
                 </li>
                 <li>
-                  <a href="/#art-banking" className="hover:text-amber-400 transition">Fair Play &amp; Ethics</a>
+                  <Link href="/#banking-process" className="hover:text-amber-400 transition">Fair Play &amp; Ethics</Link>
                 </li>
                 <li>
-                  <a href="/#faq" className="hover:text-amber-400 transition">24x7 Help Desk</a>
+                  <Link href="/#faq" className="hover:text-amber-400 transition">24x7 Help Desk</Link>
                 </li>
                 <li>
-                  <a href="/#faq" className="hover:text-amber-400 transition">Contact Support</a>
+                  <Link href="/#faq" className="hover:text-amber-400 transition">Contact Support</Link>
                 </li>
                 <li className="pt-1.5 text-emerald-400 font-bold flex items-center gap-1.5 text-[11px]">
                   <span className="px-1.5 py-0.5 rounded bg-emerald-500/20 border border-emerald-500/30 text-[10px]">IN</span>
@@ -292,13 +225,14 @@ export default function RootLayout({
             {/* Col 5: App Card Banner */}
             <div className="lg:col-span-2 flex flex-col items-center">
               <div className="w-full max-w-[190px] rounded-2xl overflow-hidden border border-amber-400/30 bg-slate-900 shadow-2xl mb-2 p-1 bg-gradient-to-b from-[#1a1329] to-[#090514]">
-                <img
+                <Image
                   src="/teen-patti-master-app-3000.webp"
                   alt="Teen Patti Master App Preview"
+                  width={792}
+                  height={1061}
+                  sizes="190px"
+                  loading="lazy"
                   className="w-full h-auto object-contain rounded-xl"
-                  onError={(e) => {
-                    (e.target as HTMLElement).style.display = 'none';
-                  }}
                 />
               </div>
             </div>
@@ -310,15 +244,15 @@ export default function RootLayout({
               <span className="text-emerald-400 font-black tracking-widest text-sm">
                 ♠ ♥ ♦ ♣
               </span>
-              <span className="text-slate-500">|</span>
+              <span className="text-slate-400">|</span>
               <span className="text-slate-400 font-medium">
-                © 2026 Teen Patti Master. All rights reserved.
+                © 2026 {SITE_NAME}. All rights reserved.
               </span>
             </div>
 
             <p className="text-center md:text-right leading-relaxed max-w-2xl">
               <strong className="text-amber-400 font-black">18+ Only Notice:</strong>{' '}
-              Teen Patti Master Hub is an educational and digital entertainment portal. Card gaming may be restricted or subject to local regulations in your jurisdiction. Please verify regional compliance.
+              This is an independent educational and digital entertainment portal, not affiliated with the game publisher. Card gaming may be restricted or subject to local regulations in your jurisdiction. Please verify regional compliance.
             </p>
           </div>
         </footer>
@@ -332,6 +266,7 @@ export default function RootLayout({
         >
           <a
             href={DOWNLOAD_URL}
+            rel="nofollow"
             className="group relative flex items-center gap-2.5 px-4 py-2.5 bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-black rounded-full shadow-[0_0_25px_rgba(16,185,129,0.7)] border-2 border-emerald-300 active:scale-95 transition-all transform hover:scale-105"
           >
             {/* Pulsing Backlight Effect */}
