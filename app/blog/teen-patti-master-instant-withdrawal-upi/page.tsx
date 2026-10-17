@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: 'https://www.bolaseo.com/blog/teen-patti-master-instant-withdrawal-upi',
     images: [
       {
-        url: 'https://www.bolaseo.com/teen-patti-master-withdrawal.webp',
+        url: 'https://www.bolaseo.com/teen-patti-master-game-2026.webp',
         width: 512,
         height: 512,
         alt: 'Teen Patti Master Instant Withdrawal UPI Guide',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Master Instant Withdrawal UPI Guide (2026)',
     description:
       'Learn how to cash out winnings from Teen Patti Master to UPI within 5-10 minutes. Complete financial setup and compliance rules.',
-    images: ['https://www.bolaseo.com/teen-patti-master-withdrawal.webp'],
+    images: ['https://www.bolaseo.com/teen-patti-master-game-2026.webp'],
   },
 };
 
@@ -52,7 +52,7 @@ export default function InstantWithdrawalUpiPage() {
     headline: 'Teen Patti Master Instant Withdrawal UPI: Fast Cashout & Bank Guide (2026)',
     description:
       'Exhaustive architectural breakdown of the instant UPI and IMPS withdrawal engine on Teen Patti Master, covering verification, payout gateways, and compliance.',
-    image: 'https://www.bolaseo.com/teen-patti-master-withdrawal.webp',
+    image: 'https://www.bolaseo.com/teen-patti-master-game-2026.webp',
     author: {
       '@type': 'Organization',
       name: 'Teen Patti Master Guide Editorial Team',
@@ -172,7 +172,7 @@ export default function InstantWithdrawalUpiPage() {
         <div className="flex justify-center">
           <div className="relative w-[320px] h-[320px] sm:w-[512px] sm:h-[512px] rounded-2xl overflow-hidden border border-amber-500/20 bg-slate-950 shadow-2xl">
             <Image
-              src="/teen-patti-master-withdrawal.webp"
+              src="/teen-patti-master-game-2026.webp"
               alt="Teen Patti Master Instant Withdrawal UPI Guide"
               width={512}
               height={512}

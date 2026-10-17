@@ -84,7 +84,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: 'Step-by-step method to withdraw your winnings straight to GPay, PhonePe, or Paytm without pending problems.',
     readTime: '3 min',
     publishedAt: '2026-10-06',
-    image: '/13-card-rummy.webp',
+    image: '/teen-patti-master-game-2026.webp',
     content: [
       {
         heading: 'Rules for Smooth Withdrawals',
@@ -114,7 +114,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     readTime: "8 min",
     publishedAt: "2026-10-08",
     updatedAt: "2026-10-16",
-    image: "/teen-patti-master-2026.webp",
+    image: "/teen-patti-master-withdrawal-game.webp",
     intro: [
       "आपने Teen Patti Master से पैसे निकालने की request डाली, स्क्रीन पर \"Pending\" लिखा आया, और फिर घंटों तक कुछ नहीं हुआ। ऐसे में घबराहट होना स्वाभाविक है, ख़ासकर तब जब रकम बड़ी हो।",
       "राहत की बात यह है कि ज़्यादातर मामलों में pending withdrawal का मतलब पैसा डूबना नहीं होता। अक्सर इसके पीछे बैंक सर्वर की देरी, गलत UPI ID या कोई अधूरी शर्त जैसा मामूली कारण होता है। इस गाइड में हम आसान भाषा में बताएँगे कि withdrawal क्यों अटकता है, कितना इंतज़ार करना ठीक है, और समस्या को सही तरीके से कैसे सुलझाएँ। साथ ही उन धोखेबाज़ों से बचने के तरीके भी जानेंगे जो ऐसे ही परेशान users को निशाना बनाते हैं।",
@@ -368,7 +368,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     readTime: "8 min",
     publishedAt: "2026-10-08",
     updatedAt: "2026-10-16",
-    image: "/Teen-Patti-Master-Star.webp",
+    image: "/teen-patti-master-old-version.webp",
     intro: [
       "Every time Teen Patti Master rolls out an update, a group of players starts searching for the old version. The reasons are usually the same: the new build feels heavier, the phone heats up, a favourite button has moved, or the app crashes on launch. If that sounds familiar, you are not alone.",
       "Before you uninstall anything, it helps to understand what really happens when you go back to an older APK. Some old versions run fine for weeks. Others stop logging in the moment the server is upgraded. And a few \"old version\" files floating around the internet are not the real app at all. This guide covers the whole picture — why people downgrade, whether old builds still work, how to install one without putting your phone or account at risk, and how to fix most problems without downgrading at all.",
@@ -592,7 +592,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     readTime: "8 min",
     publishedAt: "2026-10-08",
     updatedAt: "2026-10-16",
-    image: "/13-card-rummy.webp",
+    image: "/teen-patti-master-vip.webp",
     intro: [
       "Open Teen Patti Master and you will spot a VIP badge next to your profile. Tap it and a ladder of levels appears, each one promising bigger daily rewards, cashback and faster service. It is only natural to wonder how to climb that ladder — and whether it is worth the effort.",
       "This guide explains how VIP programs in apps like Teen Patti Master generally work, what kind of benefits to expect at different levels and, just as importantly, when chasing a higher level stops making sense. We have also added a section on VIP-related scams, because they are more common than most players realise. One note before we start: exact VIP requirements and rewards can change with app updates, so always confirm the current numbers on the VIP page inside your own app.",
@@ -1584,7 +1584,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "How the Teen Patti Master refer and earn program usually works, how to share your link, what rewards depend on, and the scams and mistakes to avoid.",
     readTime: "7 min",
     publishedAt: "2026-10-16",
-    image: "/teen-patti-master-51-bonus.webp",
+    image: "/teen-patti-master-refer-erning.webp",
     intro: [
       "Scroll through any Teen Patti Master video or Telegram group and you will see bold claims about earning \"daily passive income\" through the refer and earn program. Some of it is real, a lot of it is exaggerated, and some of it is a scam.",
       "In this guide we explain how referral programs in apps like Teen Patti Master generally work, where to find your referral link, what your rewards actually depend on, and how to share responsibly. We also cover the warning signs of fake referral schemes. Exact commission rates and rules change with app updates, so always check the \"Refer & Earn\" or \"Agent\" section inside your app for current details.",
