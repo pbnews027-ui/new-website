@@ -1407,9 +1407,9 @@ export const ARTICLES_DATA: ArticleItem[] = [
     ],
   },
   {
-    slug: "dragon-vs-tiger-rules-tips",
-    title: "Dragon vs Tiger Rules, Odds & Honest Tips for Teen Patti Master Players",
-    metaTitle: "Dragon vs Tiger Rules & Tips: How to Play (2026 Guide)",
+    slug: "teen-patti-master-dragon-vs-tiger",
+    title: "Teen Patti Master Dragon vs Tiger: Rules, Odds & Honest Tips",
+    metaTitle: "Teen Patti Master Dragon vs Tiger: Rules & Tips (2026)",
     category: "Strategy",
     desc: "Learn Dragon vs Tiger rules, payouts, real odds and house edge, plus honest tips on tie bets, pattern charts and bankroll limits before you play in Teen Patti Master.",
     readTime: "8 min",
