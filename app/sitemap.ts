@@ -1,17 +1,17 @@
 import { MetadataRoute } from 'next';
 import { ARTICLES_DATA } from './blog/articlesData';
-import { SITE_URL } from '@/lib/site';
+import { SITE_URL, TRUST_PAGES_UPDATED } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use real publish dates so Google trusts lastmod (not "changed on every build").
   const articleUrls: MetadataRoute.Sitemap = ARTICLES_DATA.map((article) => ({
     url: `${SITE_URL}/blog/${article.slug}`,
-    lastModified: new Date(article.publishedAt),
+    lastModified: new Date(article.updatedAt ?? article.publishedAt),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
 
-  const latest = ARTICLES_DATA.map((a) => a.publishedAt).sort().at(-1);
+  const latest = ARTICLES_DATA.map((a) => a.updatedAt ?? a.publishedAt).sort().at(-1);
 
   return [
     {
@@ -27,5 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...articleUrls,
+    ...['/about', '/contact', '/privacy-policy', '/disclaimer'].map((path) => ({
+      url: `${SITE_URL}${path}`,
+      lastModified: new Date(TRUST_PAGES_UPDATED),
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
+    })),
   ];
 }

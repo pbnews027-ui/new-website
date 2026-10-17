@@ -204,16 +204,16 @@ export default function RootLayout({
               </p>
               <ul className="space-y-2 text-xs text-slate-400 font-medium">
                 <li>
-                  <Link href="/#app-specs" className="hover:text-amber-400 transition">Platform About Us</Link>
+                  <Link href="/about" className="hover:text-amber-400 transition">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/#banking-process" className="hover:text-amber-400 transition">Fair Play &amp; Ethics</Link>
+                  <Link href="/disclaimer" className="hover:text-amber-400 transition">Disclaimer &amp; Responsible Gaming</Link>
                 </li>
                 <li>
-                  <Link href="/#faq" className="hover:text-amber-400 transition">24x7 Help Desk</Link>
+                  <Link href="/privacy-policy" className="hover:text-amber-400 transition">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/#faq" className="hover:text-amber-400 transition">Contact Support</Link>
+                  <Link href="/contact" className="hover:text-amber-400 transition">Contact Us</Link>
                 </li>
                 <li className="pt-1.5 text-emerald-400 font-bold flex items-center gap-1.5 text-[11px]">
                   <span className="px-1.5 py-0.5 rounded bg-emerald-500/20 border border-emerald-500/30 text-[10px]">IN</span>

@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { DOWNLOAD_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus & Withdrawal Review',
+  title: 'Teen Patti Master APK Download 2026: Install & Bonus Guide',
   description:
-    '2026 complete review and download guide of Teen Patti Master APK. Milestone Bonus Steps ₹5,100 Claim UPI Cashout Steps Real Winning Strategies.',
+    'Teen Patti Master APK download guide for 2026: safe install steps, system requirements, ₹5,100 bonus rules, UPI withdrawals and card rankings.',
   alternates: {
     canonical: 'https://www.bolaseo.com/blog/teen-patti-master-apk-download-2026',
   },
   openGraph: {
-    title: 'Download Teen Patti Master APK 2026: Official App, ₹5,100 Bonus & Withdrawal Review',
+    title: 'Teen Patti Master APK Download 2026: Install & Bonus Guide',
     description:
       'Verified guide for Teen Patti Master APK v5.2 download, ₹5,100 milestone unlock rules, and direct UPI bank withdrawal proofs.',
     url: 'https://www.bolaseo.com/blog/teen-patti-master-apk-download-2026',

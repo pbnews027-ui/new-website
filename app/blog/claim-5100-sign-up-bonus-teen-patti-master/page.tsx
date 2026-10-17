@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { DOWNLOAD_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Master: Claim ₹5,100 Sign-Up Bonus & Instant UPI Cashout (2026)',
+  title: 'Teen Patti Master ₹5,100 Sign-Up Bonus: How to Claim (2026)',
   description:
-    'Complete guide to claim and unlock the ₹5,100 sign-up bonus on Teen Patti Master. Step-by-step mobile binding, milestone turnover rules, and instant UPI withdrawal tricks.',
+    'How to claim the ₹5,100 sign-up bonus on Teen Patti Master: mobile binding, milestone turnover rules and UPI withdrawal steps, explained simply.',
   keywords: [
     'Teen Patti Master',
     'Teen Patti Master sign up bonus',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',
   },
   openGraph: {
-    title: 'Teen Patti Master: Claim ₹5,100 Sign-Up Bonus & Instant UPI Cashout (2026)',
+    title: 'Teen Patti Master ₹5,100 Sign-Up Bonus: How to Claim (2026)',
     description:
       'Master the ₹5,100 welcome bonus on Teen Patti Master. Learn verified turnover calculation, instant ₹51 signup credit, and fast bank withdrawals.',
     url: 'https://www.bolaseo.com/blog/claim-5100-sign-up-bonus-teen-patti-master',

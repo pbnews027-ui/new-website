@@ -16,6 +16,14 @@ export const metadata: Metadata = {
       'APK install help, bonus rules, UPI withdrawal fixes, VIP levels and card game strategy.',
     url: '/blog',
     type: 'website',
+    images: [
+      {
+        url: '/teen-patti-master-2026.webp',
+        width: 1610,
+        height: 1026,
+        alt: 'Teen Patti Master Guides 2026',
+      },
+    ],
   },
 };
 

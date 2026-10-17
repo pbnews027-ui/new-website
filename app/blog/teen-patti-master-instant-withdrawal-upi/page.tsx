@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { DOWNLOAD_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Master Instant Withdrawal UPI: Fast Cashout & Bank Guide (2026)',
+  title: 'Teen Patti Master UPI Withdrawal: Cashout & Bank Guide (2026)',
   description:
-    'Complete 2026 blueprint for Teen Patti Master instant withdrawal UPI. Step-by-step cashout process, minimum limits, VPA validation, and troubleshooting failed payments.',
+    'Teen Patti Master UPI withdrawal guide: step-by-step cashout, minimum limits, UPI ID checks and how to fix failed or delayed payments.',
   keywords: [
     'Teen Patti Master instant withdrawal UPI',
     'Teen Patti Master withdrawal',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.bolaseo.com/blog/teen-patti-master-instant-withdrawal-upi',
   },
   openGraph: {
-    title: 'Teen Patti Master Instant Withdrawal UPI: Fast Cashout & Bank Guide (2026)',
+    title: 'Teen Patti Master UPI Withdrawal: Cashout & Bank Guide (2026)',
     description:
       'Verified guide on Teen Patti Master instant withdrawal via UPI & IMPS. Learn NPCI routing, minimum ₹100 limit, settlement timelines, and anti-freeze compliance.',
     url: 'https://www.bolaseo.com/blog/teen-patti-master-instant-withdrawal-upi',
