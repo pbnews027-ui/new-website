@@ -214,7 +214,7 @@ export default function InstantWithdrawalUpiPage() {
             href={DOWNLOAD_URL}
             className="py-3 px-6 bg-gradient-to-r from-emerald-400 to-green-500 hover:brightness-110 text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg active:scale-95 transition"
           >
-            ⚡ Get Official App
+            ⚡ Get the App
           </a>
         </div>
 
@@ -448,7 +448,7 @@ export default function InstantWithdrawalUpiPage() {
             </Link>
             <span className="text-slate-600">•</span>
             <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-400 underline">
-              Official APK Download Guide
+              APK Download Guide
             </Link>
             <span className="text-slate-600">•</span>
             <Link href="/blog/claim-5100-sign-up-bonus-teen-patti-master" className="text-amber-400 underline">

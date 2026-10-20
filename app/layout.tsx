@@ -144,7 +144,7 @@ export default function RootLayout({
                   rel="noreferrer"
                   className="px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs font-semibold text-slate-200 hover:border-amber-400/50 hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-red-500">▶</span> Official Tutorials
+                  <span className="text-red-500">▶</span> Video Tutorials
                 </a>
               </div>
             </div>

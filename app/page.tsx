@@ -8,14 +8,14 @@ import { DOWNLOAD_URL, SITE_URL } from '@/lib/site';
 
 // 1. Google SEO Search Engine Meta Tags
 export const metadata: Metadata = {
-  title: 'Teen Patti Master APK Download (Official 2026) - Get ₹5,100 Bonus',
+  title: 'Teen Patti Master APK Download 2026: Install Guide & ₹5,100 Bonus',
   description:
     'Download Teen Patti Master APK latest version v5.2 for Android. Get instant ₹5,100 welcome bonus, 100% safe UPI withdrawals, and play 30+ card games on bolaseo.com.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Teen Patti Master APK Download - Official 2026 Edition',
+    title: 'Teen Patti Master APK Download 2026 - Complete Guide',
     description:
       'Play 30+ tables and withdraw real money directly to your UPI/Bank. 100% fair play RNG certified.',
     url: '/',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const faqData = [
   {
     q: 'Is it safe to download Teen Patti Master APK?',
-    a: 'Yes. The official package from the verified server is 100% clean, virus scanned, and completely free of spyware or hidden adware.',
+    a: 'Download only from a source you trust and let Google Play Protect scan the file before installing. Avoid "mod" or "hack" versions, which can contain malware or steal your OTP.',
   },
   {
     q: 'Do I need an expensive smartphone to play?',
@@ -128,7 +128,7 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
                   Online &amp; Download
                 </span>{' '}
-                Official Site
+                Guide 2026
               </h1>
 
               {/* Mobile Quick Download Badge (Fixed Image with sizes="80px") */}
@@ -173,7 +173,7 @@ export default function Home() {
                   <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9992.4482.9992.9993s-.4482.9997-.9992.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9992.4482.9992.9993s-.4482.9997-.9992.9997m11.4045-6.02l1.997-3.459a.416.416 0 00-.1523-.5676.416.416 0 00-.568.1523l-2.0223 3.503c-1.4244-.652-3.003-1.0182-4.7359-1.0182-1.733 0-3.3115.3662-4.736 1.0182L5.642 4.8871a.416.416 0 00-.568-.1523.416.416 0 00-.1523.5676l1.997 3.459C3.197 10.6625 1 14.108 1 18.0673h22c0-3.9593-2.197-7.4048-5.9185-9.3059" />
                 </svg>
                 <div className="text-left leading-tight">
-                  <div className="text-[11px] uppercase font-extrabold tracking-wider text-slate-800">Download Official APK</div>
+                  <div className="text-[11px] uppercase font-extrabold tracking-wider text-slate-800">Download APK</div>
                   <div className="text-sm font-black">v5.2 • (64 MB)</div>
                 </div>
               </a>
@@ -214,7 +214,7 @@ export default function Home() {
               <div className="rounded-2xl border border-amber-400/20 mb-4 bg-gradient-to-b from-[#160d26] to-[#0a0414] relative w-full aspect-[3/4] flex items-center justify-center p-2.5 overflow-hidden">
                 <Image
                   src="/teen-patti-master-app-3000.webp"
-                  alt="Teen Patti Master Official"
+                  alt="Teen Patti Master App Preview"
                   fill
                   sizes="(max-width: 1024px) 100vw, 360px"
                   className="object-contain p-2 rounded-xl transition-transform duration-500 hover:scale-[1.02]"
@@ -225,7 +225,7 @@ export default function Home() {
                 href={DOWNLOAD_URL}
                 className="block w-full py-3 mb-4 bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-400 hover:to-green-500 text-slate-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.45)] text-center transition active:scale-[0.98]"
               >
-                ⚡ DOWNLOAD OFFICIAL APK
+                ⚡ DOWNLOAD APK
               </a>
 
               <div className="space-y-2 text-center">
@@ -380,7 +380,7 @@ export default function Home() {
       <section id="article" className="px-5 lg:px-12 py-16 max-w-5xl mx-auto border-t border-slate-800/80 space-y-12">
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-amber-400/40 text-amber-300 text-xs font-semibold">
-            <span>📚 Complete Guide &amp; Official Article</span>
+            <span>📚 Complete Guide &amp; Review</span>
             <span>•</span>
             <span className="text-emerald-400">100% Fair Play Verified</span>
           </div>
@@ -394,7 +394,7 @@ export default function Home() {
           </p>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-            This is the ultimate guide where we cut through the hype and present to you a no-nonsense, down-to-earth review of the Teen Patti Master v5.2 (2026 Edition). We cover everything important: Downloading the clean official package, bypassing the Android warning about Unknown sources, Keeping your wallet safe from accidental account bans, and Receiving your real cash winnings directly into your bank account or UPI wallet in 5-10 minutes.
+            This is the ultimate guide where we cut through the hype and present to you a no-nonsense, down-to-earth review of the Teen Patti Master v5.2 (2026 Edition). We cover everything important: Downloading the right package safely, bypassing the Android warning about Unknown sources, Keeping your wallet safe from accidental account bans, and Receiving your real cash winnings directly into your bank account or UPI wallet in 5-10 minutes.
           </p>
         </div>
 
@@ -406,7 +406,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-medium text-slate-300">
             <a href="#what-is-tpm" className="hover:text-amber-400 transition">1. What is Teen Patti Master &amp; Why It Is So Popular?</a>
             <a href="#app-specs" className="hover:text-amber-400 transition">2. App Specs &amp; System Requirements (Quick Reference)</a>
-            <a href="#install-guide" className="hover:text-amber-400 transition">3. Official APK Download &amp; Installation Step by Step</a>
+            <a href="#install-guide" className="hover:text-amber-400 transition">3. APK Download &amp; Installation Step by Step</a>
             <a href="#bonus-truth" className="hover:text-amber-400 transition">4. The Truth of ₹5,100 Sign-Up Bonus (How to Get It)</a>
             <a href="#games-breakdown" className="hover:text-amber-400 transition">5. Lobby Overview: What Modes Should You Actually Play?</a>
             <a href="#hand-rankings" className="hover:text-amber-400 transition">6. Teen Patti Card Hand Rankings (Highest to Lowest)</a>
@@ -425,7 +425,7 @@ export default function Home() {
             1. What is Teen Patti Master and why is it so popular?
           </h3>
           <p className="text-sm text-slate-300 leading-relaxed">
-            Today, Teen Patti Master is one of the most downloaded real-cash multiplayer card games in India. Since real money skill and betting games are usually not hosted directly on the Google Play Store, the actual app is securely distributed as an Android Package Kit (APK) file through its official dedicated servers.
+            Today, Teen Patti Master is one of the most downloaded real-cash multiplayer card games in India. Since real money skill and betting games are usually not hosted directly on the Google Play Store, the app is distributed as an Android Package Kit (APK) file outside the Play Store, so it is important to download it from a source you trust.
           </p>
           <p className="text-sm text-slate-300 leading-relaxed">
             The biggest highlight of Teen Patti Master is blazing speed and performance optimisation. Millions of gamers across India connect on regular 4G mobile data or the most basic Wi-Fi connections. We built the app engine from scratch to be ultra-lightweight so that gameplay is smooth and lag-free even on budget smartphones with 2 GB of RAM. Most importantly, all the dealing of cards is powered by automated Random Number Generator (RNG) algorithms, eliminating human bias, manipulation of cards, and rigged lobbies.
@@ -445,13 +445,13 @@ export default function Home() {
               <thead className="bg-slate-900 text-amber-400 uppercase text-[11px] font-black border-b border-slate-800">
                 <tr>
                   <th className="py-3 px-4">Feature</th>
-                  <th className="py-3 px-4">Official Information (Build 2026)</th>
+                  <th className="py-3 px-4">Details (Build 2026)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/80 font-normal">
                 <tr className="hover:bg-slate-900/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Application Name</td>
-                  <td className="py-3 px-4 text-emerald-400 font-extrabold">Teen Patti Master Official APK</td>
+                  <td className="py-3 px-4 text-emerald-400 font-extrabold">Teen Patti Master APK</td>
                 </tr>
                 <tr className="hover:bg-slate-900/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Current Package</td>
@@ -498,17 +498,17 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 3. Download & Install Official APK */}
+        {/* 3. Download & Install the APK */}
         <div id="install-guide" className="space-y-4">
           <h3 className="text-xl sm:text-2xl font-black text-white border-l-4 border-amber-400 pl-3">
-            3. Download &amp; Install Official APK: Step by Step (No Errors)
+            3. Download &amp; Install the APK: Step by Step (No Errors)
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
             Most casual players fall for third-party modded APK files and fake clone sites that bundle unwanted malware or block cash withdrawals. Here is the simple process to install the genuine, clean, and verified APK on your Android device:
           </p>
           <div className="space-y-3 bg-slate-900/50 p-6 rounded-2xl border border-slate-800 text-xs sm:text-sm text-slate-300">
             <div>
-              <strong className="text-amber-400">Step 1: Download Clean APK —</strong> Click the official server download link. It’s a lightweight 64 MB package that you’ll be downloading. If you are using a browser like Google Chrome you may see a standard Android security prompt: <em>&quot;File might be harmful. Do you want to download TeenPattiMaster.apk?&quot;</em> Don’t worry, this is an automated alert Android shows for any app downloaded outside the Google Play Store. Click <strong>&quot;Download Anyway&quot;</strong> to continue.
+              <strong className="text-amber-400">Step 1: Download Clean APK —</strong> Tap the download button. It’s a lightweight 64 MB package that you’ll be downloading. If you are using a browser like Google Chrome you may see a standard Android security prompt: <em>&quot;File might be harmful. Do you want to download TeenPattiMaster.apk?&quot;</em> Don’t worry, this is an automated alert Android shows for any app downloaded outside the Google Play Store. Click <strong>&quot;Download Anyway&quot;</strong> to continue.
             </div>
             <div>
               <strong className="text-amber-400">Step 2: Enable Unknown Sources —</strong> Once download is complete, tap the notification for the downloaded APK. If this is the first time you are sideloading an application through your browser, Android will ask for permission to install it: Go to Phone Settings &gt; Security (or Apps &amp; Permissions). Look for <strong>&quot;Install Unknown Apps&quot;</strong> and change the permission to Allow for Chrome or your current file manager.
@@ -557,7 +557,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
             <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1">
               <h4 className="font-bold text-white text-base">1. Classic Teen Patti</h4>
-              <p className="text-slate-400 leading-relaxed">Classic 3 card poker format of India. Tables seat 5-6 players. You can play blind (without looking at your hand) to keep stakes low, or see your cards (&quot;Seen&quot;) to raise strategically. Pot limits, shows, and side-show mechanics are in line with official tournament guidelines.</p>
+              <p className="text-slate-400 leading-relaxed">Classic 3 card poker format of India. Tables seat 5-6 players. You can play blind (without looking at your hand) to keep stakes low, or see your cards (&quot;Seen&quot;) to raise strategically. Pot limits, shows, and side-show mechanics follow standard Teen Patti rules.</p>
             </div>
             <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-1">
               <h4 className="font-bold text-white text-base">2. Dragon vs Tiger (Fast 10 Second Rounds)</h4>
@@ -713,7 +713,7 @@ export default function Home() {
             Ready to Play Teen Patti Master?
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Download the official 64 MB package now and get instant access to 30+ tables and ₹5,100 welcome rewards!
+            Download the 64 MB package now and get instant access to 30+ tables and ₹5,100 welcome rewards!
           </p>
           <div className="pt-2">
             <a

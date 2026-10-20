@@ -105,7 +105,7 @@ export default function Claim5100BonusPage() {
         name: 'Is the Teen Patti Master APK free to download for Android?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, the official 64 MB APK package is 100% free to download and install from the official web portal without any mandatory upfront payment.',
+          text: 'Yes, the 64 MB APK package is free to download and install, with no mandatory upfront payment. Download it only from a source you trust.',
         },
       },
     ],
@@ -247,7 +247,7 @@ export default function Claim5100BonusPage() {
           </p>
           <div className="space-y-3 bg-slate-900/60 p-6 rounded-2xl border border-slate-800 text-xs sm:text-sm text-slate-300">
             <h3 className="text-base font-bold text-amber-300">Mobile Binding Instructions — Step by Step:</h3>
-            <p><strong>Step 1: Open the Official Client:</strong> Launch the authentic, cryptographically signed Teen Patti Master app on your Android device with a stable 4G/5G connection.</p>
+            <p><strong>Step 1: Open the Genuine App:</strong> Launch the authentic, cryptographically signed Teen Patti Master app on your Android device with a stable 4G/5G connection.</p>
             <p><strong>Step 2: Open User Profile Settings:</strong> Find the circular avatar icon in the upper left-hand quadrant of the main game lobby and tap it.</p>
             <p><strong>Step 3: Start the Binding Process:</strong> From your user profile dashboard, locate the prominent golden button that says <strong>Bind Mobile</strong>.</p>
             <p><strong>Step 4: Input Identity Information:</strong> Enter your active 10-digit Indian mobile number matching the SIM card installed in your smartphone.</p>
@@ -452,7 +452,7 @@ export default function Claim5100BonusPage() {
             </Link>
             <span className="text-slate-600">•</span>
             <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-400 underline">
-              Official APK Download Guide
+              APK Download Guide
             </Link>
           </div>
         </footer>
