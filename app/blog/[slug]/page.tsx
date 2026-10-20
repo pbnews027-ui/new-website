@@ -8,7 +8,6 @@ import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from '@/lib/site';
 
 // These slugs have their own hand-written page folders, which take precedence.
 const CUSTOM_PAGE_SLUGS = [
-  'teen-patti-master-apk-download-2026',
   'claim-5100-sign-up-bonus-teen-patti-master',
   'teen-patti-master-instant-withdrawal-upi',
 ];

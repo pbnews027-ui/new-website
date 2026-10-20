@@ -193,7 +193,7 @@ export default function InstantWithdrawalUpiPage() {
           </p>
           <p>
             Whether executing micro-payouts via Unified Payments Interface (UPI) VPAs or transferring high-roller reserves via Immediate Payment Service (IMPS), the platform’s clearing architecture is engineered for low latency, tight cryptographic security, and automated balance reconciliation. If you have recently installed the app via our{' '}
-            <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-300 font-semibold underline">
+            <Link href="/blog/teen-patti-master-download" className="text-amber-300 font-semibold underline">
               Teen Patti Master APK Download 2026
             </Link>{' '}
             portal or claimed your starter balance via the{' '}
@@ -447,7 +447,7 @@ export default function InstantWithdrawalUpiPage() {
               Teen Patti Master Homepage
             </Link>
             <span className="text-slate-600">•</span>
-            <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-400 underline">
+            <Link href="/blog/teen-patti-master-download" className="text-amber-400 underline">
               APK Download Guide
             </Link>
             <span className="text-slate-600">•</span>

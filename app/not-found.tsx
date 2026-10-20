@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const POPULAR_GUIDES = [
-  { href: '/blog/teen-patti-master-apk-download-2026', label: 'Teen Patti Master APK Download Guide' },
+  { href: '/blog/teen-patti-master-download', label: 'Teen Patti Master APK Download Guide' },
   { href: '/blog/teen-patti-master-hand-ranking', label: 'Teen Patti Hand Ranking' },
   { href: '/blog/teen-patti-master-rules-in-hindi', label: 'Teen Patti Rules in Hindi' },
   { href: '/blog/teen-patti-master-dragon-vs-tiger', label: 'Dragon vs Tiger Rules & Tips' },

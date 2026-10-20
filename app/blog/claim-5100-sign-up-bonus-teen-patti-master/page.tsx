@@ -193,7 +193,7 @@ export default function Claim5100BonusPage() {
           </p>
           <p>
             Many players get caught up in the illusion that introductory reward promises are paid out as single, withdrawable cash drops. The reality is that modern real-money platforms employ complex turnover metrics, progressive milestone ladders, and liquidity management protocols to protect the gaming ecosystem from automated bot abuse. For full setup instructions, check out our{' '}
-            <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-300 underline font-semibold">
+            <Link href="/blog/teen-patti-master-download" className="text-amber-300 underline font-semibold">
               Teen Patti Master APK download guide
             </Link>.
           </p>
@@ -451,7 +451,7 @@ export default function Claim5100BonusPage() {
               Teen Patti Master Homepage
             </Link>
             <span className="text-slate-600">•</span>
-            <Link href="/blog/teen-patti-master-apk-download-2026" className="text-amber-400 underline">
+            <Link href="/blog/teen-patti-master-download" className="text-amber-400 underline">
               APK Download Guide
             </Link>
           </div>
