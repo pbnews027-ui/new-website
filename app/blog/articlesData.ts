@@ -30,7 +30,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: 'Wondering how that ₹5,100 welcome reward works? Here is the breakdown so you do not miss out on free chips.',
     readTime: '4 min',
     publishedAt: '2026-10-06',
-    image: '/classic-teen-patti.webp',
+    image: '/teen-patti-master-51-bonus.webp',
     content: [
       {
         heading: 'How the Bonus System Really Works',
@@ -1194,7 +1194,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "Teen Patti mein side show kya hota hai, kaun maang sakta hai, kitna paisa lagta hai aur kab accept ya reject karna chahiye — examples ke saath aasan Hindi guide.",
     readTime: "7 min",
     publishedAt: "2026-10-16",
-    image: "/classic-teen-patti.webp",
+    image: "/teen-patti-side-show-rules.webp",
     intro: [
       "Teen Patti ke saare rules mein se \"side show\" sabse zyada galat samjha jaane wala rule hai. Kai naye players ko lagta hai ki side show kisi ke saath bhi, kabhi bhi maanga ja sakta hai. Kuch log ise accept karne ka matlab hi nahi samajhte, aur bina soche haan kar dete hain.",
       "Is guide mein hum Teen Patti Master aur zyadatar Teen Patti apps mein use hone wale side show rules ko step by step samjhayenge — side show kya hai, kaun maang sakta hai, iski keemat kitni hoti hai, compare kaise hota hai, aur sabse zaroori, kab maangna ya accept karna samajhdaari hai. Saath mein real examples bhi diye gaye hain.",
@@ -1386,7 +1386,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "Teen Patti Master Dragon vs Tiger rules, payouts, real odds and house edge, plus honest tips on tie bets, pattern charts and bankroll limits.",
     readTime: "8 min",
     publishedAt: "2026-10-16",
-    image: "/teen-patti-master-app-3000.webp",
+    image: "/teen-patti-master-dragon-vs-tiger.webp",
     intro: [
       "Dragon vs Tiger is one of the fastest games in the Teen Patti Master lobby. There are no hands to build and no decisions after the cards are dealt. Two cards, one for Dragon and one for Tiger, are turned over, and the higher card wins. A round can be over in seconds.",
       "That speed is exactly why it is so popular — and why it is worth understanding properly before you play. In this guide we explain the rules in plain language, show you the real odds behind each bet, and share honest tips about tie bets, \"pattern\" charts and managing your money. If you are looking for a secret trick that guarantees wins, we will save you time now: there isn't one. But understanding the game will help you avoid the most expensive mistakes.",
@@ -2547,7 +2547,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "How to download Teen Patti Master safely on Android: requirements, step-by-step APK install, common error fixes and how to spot fake files.",
     readTime: "9 min",
     publishedAt: "2026-10-20",
-    image: "/teen-patti-master-anroid.webp",
+    image: "/teen-patti-master-download-guide.webp",
     intro: [
       "Search for \"Teen Patti Master download\" and you will find dozens of sites offering the APK, many with flashing buttons and promises of instant bonuses. Some of those files are genuine. Some are old. And some are modified copies designed to steal your OTP or fill your phone with adware.",
       "This guide walks you through downloading and installing Teen Patti Master the careful way: what your phone needs, exactly which settings to change, how to tell a genuine file from a fake one, how to fix the errors people run into most, and what to do in the first five minutes after installing so your account stays safe. It takes a little longer than tapping the first button you see, but it saves a lot of trouble later.",
@@ -2827,7 +2827,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "How the Teen Patti Master game works: a full round explained, every main game mode, the best modes for beginners and practical tips to play smarter.",
     readTime: "9 min",
     publishedAt: "2026-10-20",
-    image: "/classic-teen-patti.webp",
+    image: "/teen-patti-master-game-modes.webp",
     intro: [
       "Teen Patti has been played at Indian family gatherings for generations, especially around Diwali. The Teen Patti Master game takes that familiar three-card format and puts it on your phone, adding live tables, fast variants and a range of other quick games.",
       "If you have only ever played Teen Patti with friends, the app version can feel fast and unfamiliar. If you have never played at all, it can feel overwhelming. This guide explains how a round works from start to finish, what each main game mode is, which modes are best for beginners, and the habits that help you play more thoughtfully. For the full hand rankings and detailed betting rules, see our dedicated guides linked throughout.",
@@ -3416,7 +3416,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "Honest Teen Patti Master tips and tricks: when to play blind, when to fold, using side shows, reading bets, bankroll rules and the \"tricks\" you should ignore.",
     readTime: "10 min",
     publishedAt: "2026-10-24",
-    image: "/classic-teen-patti.webp",
+    image: "/teen-patti-master-tips-tricks.webp",
     intro: [
       "Type \"Teen Patti Master tricks\" into any search bar and you will find videos promising secret methods, hidden settings and guaranteed winning patterns. None of them work, because Teen Patti Master deals cards randomly and keeps a built-in edge on every table. If a real winning trick existed, the person selling it would be using it quietly rather than charging you for it.",
       "What does exist is a set of habits that separate thoughtful players from impulsive ones. These Teen Patti Master tips will not guarantee wins, but they will help you lose less on bad hands, make better decisions on good ones and keep the game fun rather than stressful. We have grouped them into decisions at the table, reading other players, and managing your money — the part most players ignore until it is too late.",
@@ -3665,7 +3665,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "Is Teen Patti Master real or fake, safe or risky, legal in India? An honest look at how it works, real risks, fake clones and the warning signs to watch for.",
     readTime: "10 min",
     publishedAt: "2026-10-24",
-    image: "/teen-patti-master.webp",
+    image: "/teen-patti-master-real-or-fake.webp",
     intro: [
       "\"Is Teen Patti Master real or fake?\" is one of the most common questions people ask before installing the app, and it is a sensible one. Real-money card apps are surrounded by fake clones, exaggerated promises and confusing legal news, so it is hard to know what to trust.",
       "The short answer is that Teen Patti Master is a real app that many people play, but \"real\" is not the same as \"risk-free\". There are genuine financial and legal risks, and there are fake copies designed to steal from players. This guide separates those issues clearly: what is real about the app, what the actual risks are, how to spot fakes, and how the legal situation in India affects you. We are an independent guide site, not connected to the app's publisher.",
@@ -3875,7 +3875,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "How to delete or close your Teen Patti Master account: withdraw your balance first, request closure, use self-exclusion and ask for data deletion.",
     readTime: "9 min",
     publishedAt: "2026-10-24",
-    image: "/teen-patti-master-app-3000.webp",
+    image: "/teen-patti-master-account-delete.webp",
     intro: [
       "There are plenty of good reasons to want your Teen Patti Master account gone. Maybe you are spending more than you planned, maybe you no longer play and want your data removed, or maybe you simply want a clean break. Whatever the reason, deleting an account properly takes a little more than uninstalling the app.",
       "Uninstalling only removes the app from your phone. Your Teen Patti Master account, balance and personal details usually stay on the platform's servers. This guide explains how to close the account itself, how to make sure you do not lose any remaining money, how self-exclusion works if your goal is to stop playing, and how to request deletion of your personal data. Exact options vary with app updates, so look for the closest matching menu in your version.",
@@ -4132,7 +4132,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "How to add a bank account or UPI ID in Teen Patti Master, complete KYC verification, avoid name mismatch errors and keep your withdrawal details safe.",
     readTime: "9 min",
     publishedAt: "2026-10-24",
-    image: "/teen-patti-master-game-2026.webp",
+    image: "/teen-patti-master-bank-account-upi.webp",
     intro: [
       "Most Teen Patti Master withdrawal problems can be traced back to one moment: the first time a player added their bank account or UPI ID. A single wrong digit, a nickname instead of the name on the bank account, or a UPI ID that is no longer active can leave money stuck for days.",
       "This guide shows you how to set up your Teen Patti Master withdrawal details correctly the first time. We cover adding a UPI ID, adding a bank account with IFSC, what KYC verification usually involves, how to fix name mismatch and \"invalid details\" errors, and how to keep this sensitive information safe. Menu names may differ slightly between app versions, but the principles stay the same.",
@@ -4401,7 +4401,7 @@ export const ARTICLES_DATA: ArticleItem[] = [
     desc: "Every popular Teen Patti Master variation explained: Muflis, AK47, Joker, Lowest and Highest Joker, 999 and Best of Four, with rules, examples and tips.",
     readTime: "10 min",
     publishedAt: "2026-10-24",
-    image: "/teen-patti-master-vip.webp",
+    image: "/teen-patti-master-variations.webp",
     intro: [
       "Once you are comfortable with classic Teen Patti, the variation tables in Teen Patti Master start to look tempting. Muflis, AK47, Joker, 999 — each one keeps the familiar three-card format but changes something important, whether that is which hand wins, which cards are wild, or how a hand is valued.",
       "Those changes catch out a lot of players. A hand that would win easily at a classic table can be worthless in Muflis, and a Pair that feels strong is suddenly weak when wild cards make Trails common. This guide explains each popular Teen Patti Master variation in plain language, with examples, a comparison table and tips for adjusting your play. Rules can differ slightly between tables, so always read the rules screen before you sit down.",
