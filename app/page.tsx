@@ -10,14 +10,14 @@ import { DOWNLOAD_URL, SITE_URL } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'Teen Patti Master APK Download 2026: Install Guide & ₹5,100 Bonus',
   description:
-    'Download Teen Patti Master APK latest version v5.2 for Android. Get instant ₹5,100 welcome bonus, 100% safe UPI withdrawals, and play 30+ card games on bolaseo.com.',
+    'Download Teen Patti Master APK latest version v5.2 for Android. Get instant ₹5,100 welcome bonus, UPI withdrawal steps, and play 30+ card games on bolaseo.com.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Teen Patti Master APK Download 2026 - Complete Guide',
     description:
-      'Play 30+ tables and withdraw real money directly to your UPI/Bank. 100% fair play RNG certified.',
+      'Install steps, game modes, hand rankings, bonus rules and UPI withdrawal help for Teen Patti Master.',
     url: '/',
     type: 'website',
     images: [
@@ -51,7 +51,7 @@ const faqData = [
   },
   {
     q: 'Is it really possible to win real money playing this game?',
-    a: 'Yes. Many players win cash prizes regularly at tables and receive steady income through the referral programme. However, remember that real money card games involve financial risk. Always play responsibly and within your entertainment budget (18+ only).',
+    a: 'Some players win individual hands or sessions, but card games involve chance and the platform keeps an edge, so most players lose more than they win over time. Treat it as paid entertainment, never as income, and play only within your budget (18+ only).',
   },
 ];
 
@@ -106,7 +106,7 @@ export default function Home() {
       {/* 1. Top Verified Security Ticker */}
       <div className="bg-gradient-to-r from-emerald-950/80 via-slate-900 to-indigo-950/80 border-b border-emerald-500/20 text-center py-2 px-4 text-xs font-medium text-emerald-300 flex items-center justify-center gap-2">
         <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span>100% Verified APK • Antivirus Scanned • Fast &amp; Secure UPI Support</span>
+        <span>Independent Guide • Safe Install Tips • 18+ Play Responsibly</span>
       </div>
 
       {/* 2. Hero Section */}
@@ -159,7 +159,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-2 pt-1 text-xs text-slate-300 font-medium">
               <span className="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">⚡ 1-Click Installation</span>
-              <span className="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">🛡 100% Ad-Free APK</span>
+              <span className="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">🛡 Safe Install Tips</span>
               <span className="px-3 py-1 bg-slate-800/80 rounded-lg border border-slate-700/60">💳 24x7 Instant Support</span>
             </div>
 
@@ -189,12 +189,12 @@ export default function Home() {
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-3 gap-3 pt-6 border-t border-slate-800/80 w-full max-w-md">
               <div>
-                <div className="text-xl sm:text-2xl font-black text-amber-400">10 Lakh+</div>
-                <div className="text-[10px] sm:text-[11px] text-slate-400 uppercase font-medium">Registered</div>
+                <div className="text-xl sm:text-2xl font-black text-amber-400">20+</div>
+                <div className="text-[10px] sm:text-[11px] text-slate-400 uppercase font-medium">Guides</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-black text-emerald-400">4.8 ★</div>
-                <div className="text-[10px] sm:text-[11px] text-slate-400 uppercase font-medium">Rating</div>
+                <div className="text-xl sm:text-2xl font-black text-emerald-400">18+</div>
+                <div className="text-[10px] sm:text-[11px] text-slate-400 uppercase font-medium">Only</div>
               </div>
               <div>
                 <div className="text-xl sm:text-2xl font-black text-indigo-400">30+</div>
@@ -240,7 +240,7 @@ export default function Home() {
                   <span className="text-emerald-400 font-bold">✓</span> Direct APK download from secured server
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-emerald-400 font-bold">✓</span> 100% Fair Play RNG Certified
+                  <span className="text-emerald-400 font-bold">✓</span> Hand rankings &amp; rules explained
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-emerald-400 font-bold">✓</span> 18+ Only • Play Responsibly
@@ -347,13 +347,7 @@ export default function Home() {
           <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-amber-400/40 transition group flex flex-col justify-between">
             <div>
               <div className="w-14 h-14 rounded-2xl overflow-hidden mb-4 bg-gradient-to-br from-[#240d17] to-[#0d0408] border border-rose-500/40 flex items-center justify-center p-1.5 shadow-md group-hover:scale-105 transition-transform">
-                <Image
-                  src="/13-card-rummy.webp"
-                  alt="13-Card Indian Rummy"
-                  width={48}
-                  height={48}
-                  className="object-contain rounded-xl"
-                />
+                <span className="text-2xl" aria-hidden="true">🃏</span>
               </div>
               <h3 className="font-bold text-base text-white group-hover:text-amber-400 transition">13-Card Indian Rummy</h3>
               <p className="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -382,7 +376,7 @@ export default function Home() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-amber-400/40 text-amber-300 text-xs font-semibold">
             <span>📚 Complete Guide &amp; Review</span>
             <span>•</span>
-            <span className="text-emerald-400">100% Fair Play Verified</span>
+            <span className="text-emerald-400">Updated 2026</span>
           </div>
 
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
@@ -478,8 +472,8 @@ export default function Home() {
                   <td className="py-3 px-4">30+ Games (Teen Patti, Rummy, Dragon vs Tiger, Slots)</td>
                 </tr>
                 <tr className="hover:bg-slate-950/40">
-                  <td className="py-3 px-4 font-bold text-slate-200">Fair Play Certification</td>
-                  <td className="py-3 px-4">100% RNG Certified 256-Bit SSL Data Encryption</td>
+                  <td className="py-3 px-4 font-bold text-slate-200">Fair Play</td>
+                  <td className="py-3 px-4">Check the app's own fair-play and RNG information</td>
                 </tr>
                 <tr className="hover:bg-slate-950/40">
                   <td className="py-3 px-4 font-bold text-slate-200">Payment Methods</td>
