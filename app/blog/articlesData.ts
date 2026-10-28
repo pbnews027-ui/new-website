@@ -20,65 +20,529 @@ export interface ArticleItem {
   content: ArticleSection[];
   // Rendered on the page and as FAQPage schema.
   faq?: { q: string; a: string }[];
+  // Content language when not English (e.g. 'hi' for Hindi articles).
+  lang?: string;
 }
 
 export const ARTICLES_DATA: ArticleItem[] = [
   {
-    slug: 'claim-5100-sign-up-bonus-teen-patti-master',
-    title: 'How to Actually Unlock the ₹5,100 Sign-Up Bonus in Teen Patti Master',
-    category: 'Bonus Guide',
-    desc: 'Wondering how that ₹5,100 welcome reward works? Here is the breakdown so you do not miss out on free chips.',
-    readTime: '4 min',
-    publishedAt: '2026-10-06',
-    image: '/teen-patti-master-51-bonus.webp',
+    slug: "claim-5100-sign-up-bonus-teen-patti-master",
+    title: "Teen Patti Master ₹5,100 Sign-Up Bonus: How It Really Works",
+    metaTitle: "Teen Patti Master ₹5,100 Bonus: How It Really Works (2026)",
+    category: "Bonus Guide",
+    desc: "What the Teen Patti Master ₹5,100 sign-up bonus really means: instant credit vs milestone rewards, wagering rules, the maths, and how to avoid bonus scams.",
+    readTime: "9 min",
+    publishedAt: "2026-10-06",
+    updatedAt: "2026-10-28",
+    image: "/teen-patti-master-51-bonus.webp",
+    intro: [
+      "The \"₹5,100 sign-up bonus\" is probably the most advertised thing about Teen Patti Master. It appears on banners, in YouTube thumbnails and on almost every download page. Many new players install the app expecting ₹5,100 to land in their wallet on day one — and are then confused when it does not.",
+      "This guide explains what a headline bonus like this usually means in practice. We look at the difference between an instant welcome credit and a milestone reward ladder, how wagering requirements decide whether bonus money ever becomes withdrawable, what the numbers look like in a realistic example, and which \"bonus\" offers are actually scams. Exact amounts and rules change with app updates and regulation, so always check the bonus terms shown inside your own app.",
+    ],
     content: [
       {
-        heading: 'How the Bonus System Really Works',
-        points: [
-          'You get an instant starter cash right after entering your mobile number and OTP.',
-          'The remaining bonus unlocks as you complete daily check-ins for 7 days.',
-          'Use these chips on low-stake tables first to build your balance safely.'
-        ]
+        heading: "What \"Up to ₹5,100\" Usually Means",
+        paragraphs: [
+          "The phrase \"up to\" does a lot of work. In most real-money card apps, a large headline bonus is the maximum total you could unlock over time, not a lump sum paid at sign-up. It is typically split into a small instant credit for registering or verifying your number, followed by a series of larger rewards that unlock only as you deposit and play.",
+          "In other words, the ₹5,100 figure describes the top of a ladder. Most players climb only part of it, and every step usually comes with conditions.",
+        ],
       },
       {
-        heading: 'Common Mistakes to Avoid',
+        heading: "The Typical Parts of a Teen Patti Master Welcome Bonus",
+        table: {
+          headers: [
+            "Part",
+            "How It Usually Works",
+            "What to Check",
+          ],
+          rows: [
+            [
+              "Instant welcome credit",
+              "A small amount after you bind your mobile number",
+              "Whether it can be withdrawn or only played",
+            ],
+            [
+              "First-deposit match",
+              "Extra bonus balance added to your first deposit",
+              "Match percentage, cap and wagering multiple",
+            ],
+            [
+              "Milestone ladder",
+              "Rewards unlocked as your total play (turnover) grows",
+              "Turnover needed for each step and time limits",
+            ],
+            [
+              "Daily check-ins",
+              "Small rewards for logging in on consecutive days",
+              "Whether missing a day resets progress",
+            ],
+            [
+              "Event bonuses",
+              "Limited-time festival or New Year rewards",
+              "Expiry date and eligible games",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Bonus Balance vs Withdrawable Balance",
+        paragraphs: [
+          "This is the single most important idea for new players. Most wallets show two separate amounts: withdrawable cash and bonus balance. Money you deposit and winnings from cash play usually sit in the withdrawable part. Bonus rewards sit in the bonus part, and they normally cannot be withdrawn directly.",
+          "Bonus balance becomes withdrawable only after you meet its wagering requirement — and if you lose it before that point, nothing is left to convert. Keep an eye on both numbers so you always know how much of your balance is genuinely yours to withdraw.",
+        ],
+      },
+      {
+        heading: "Understanding Wagering Requirements",
+        paragraphs: [
+          "A wagering requirement tells you how many times you must bet the bonus amount before it turns into withdrawable cash. A ₹100 bonus with a 10x requirement means you need to place ₹1,000 worth of bets first.",
+          "Wagering is measured by the total amount you bet, not by how much you win or lose. Because every bet carries a built-in edge, some of the bonus is usually lost along the way. That is why a large bonus with heavy wagering can end up worth far less than its headline value.",
+        ],
+      },
+      {
+        heading: "A Realistic Example",
+        paragraphs: [
+          "The figures below are illustrative, not the app's actual rules, but they show how the maths tends to work.",
+        ],
+        table: {
+          headers: [
+            "Step",
+            "Example Figure",
+          ],
+          rows: [
+            [
+              "Deposit",
+              "₹500",
+            ],
+            [
+              "First-deposit bonus (100% match)",
+              "₹500 bonus balance",
+            ],
+            [
+              "Wagering requirement",
+              "10x the bonus = ₹5,000 in bets",
+            ],
+            [
+              "Typical loss to the house edge on ₹5,000 of bets",
+              "Often several hundred rupees",
+            ],
+            [
+              "Bonus that may actually convert to cash",
+              "Frequently much less than ₹500, sometimes zero",
+            ],
+          ],
+        },
         points: [
-          'Never create multiple accounts on the same phone — the anti-fraud system will freeze both wallets.',
-          'Complete your profile details before placing withdrawal requests.'
-        ]
-      }
-    ]
+          "Reaching the full headline amount usually requires deposits and turnover many times larger than the bonus itself.",
+          "The bonus is best seen as a little extra play time, not free money.",
+        ],
+      },
+      {
+        heading: "How to Claim the Bonus Properly",
+        points: [
+          "Install the app from a trusted source and open it.",
+          "Bind your account to your own mobile number with OTP — welcome rewards are usually linked to verification.",
+          "Open the rewards or bonus section and read the terms before accepting anything.",
+          "Note the wagering multiple, time limit and eligible games for each reward.",
+          "Decide your deposit amount based on your budget, not on unlocking the next bonus step.",
+          "Track your withdrawable balance separately from your bonus balance.",
+        ],
+      },
+      {
+        heading: "Common Bonus Problems and What Causes Them",
+        table: {
+          headers: [
+            "Problem",
+            "Usual Cause",
+          ],
+          rows: [
+            [
+              "Bonus not credited",
+              "Number not verified, or offer already used on that device",
+            ],
+            [
+              "Cannot withdraw bonus",
+              "Wagering requirement not yet met",
+            ],
+            [
+              "Bonus disappeared",
+              "Time limit expired, or bonus lost while wagering",
+            ],
+            [
+              "Account frozen after bonus",
+              "Multiple accounts or clone apps on one phone",
+            ],
+            [
+              "Withdrawal blocked",
+              "Active bonus terms restrict withdrawals until completed",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Reading the Bonus Terms: What to Look For",
+        paragraphs: [
+          "Bonus terms are often tucked behind a small \"i\" icon or a \"Rules\" link, and few players open them. Spending two minutes here tells you whether a reward is worth chasing at all.",
+        ],
+        points: [
+          "Wagering multiple: how many times the bonus must be bet before withdrawal.",
+          "Time limit: how many days you have to complete the wagering.",
+          "Eligible games: some games may count only partly, or not at all.",
+          "Maximum bet while a bonus is active: exceeding it can cancel the bonus.",
+          "Maximum conversion: some bonuses cap how much can ever become cash.",
+          "Withdrawal restrictions: whether an active bonus blocks withdrawals of your own money.",
+        ],
+      },
+      {
+        heading: "Should You Decline a Bonus?",
+        paragraphs: [
+          "Sometimes the smartest move is to say no. If a bonus would lock your own deposit behind heavy wagering, or if you only want to play a few rounds and withdraw, declining it can keep your balance simple and fully withdrawable.",
+          "Declining also makes sense if you notice the bonus pushing you to play longer than you planned. A reward that changes your behaviour for the worse is not really a reward.",
+        ],
+      },
+      {
+        heading: "Bonus Scams to Avoid",
+        paragraphs: [
+          "Big bonus figures attract fraudsters. These are the patterns we see most often:",
+        ],
+        points: [
+          "\"Bonus agents\" who ask you to deposit to their personal UPI ID for a bigger bonus.",
+          "Messages asking for your OTP to \"activate\" a ₹5,100 reward.",
+          "Fake APKs advertised as \"₹5,100 instant withdrawal version\".",
+          "Requests for a fee to unlock a bonus or release bonus money.",
+          "Telegram groups promising guaranteed ways to convert bonus into cash.",
+        ],
+      },
+      {
+        heading: "Is the Sign-Up Bonus Worth It?",
+        paragraphs: [
+          "If you were already planning to play with a fixed budget, a welcome bonus can stretch that budget a little further, and there is no harm in claiming what you are offered. The problem starts when the bonus becomes the reason to deposit more, or to keep playing to reach the next milestone.",
+          "A useful rule: decide how much you are happy to spend on entertainment this month, then treat any bonus as a small extra on top. Never increase deposits just to unlock a reward.",
+        ],
+      },
+      {
+        heading: "Welcome Bonus vs Other Rewards",
+        table: {
+          headers: [
+            "Reward",
+            "Where We Cover It",
+          ],
+          rows: [
+            [
+              "Sign-up and first-deposit bonus",
+              "This guide",
+            ],
+            [
+              "VIP level rewards and cashback",
+              "Our VIP level guide",
+            ],
+            [
+              "Referral commissions",
+              "Our refer and earn guide",
+            ],
+            [
+              "Festival and New Year events",
+              "Our 2027 guide",
+            ],
+          ],
+        },
+        paragraphs: [
+          "Each type of reward has its own rules, so it helps to look at them separately rather than adding them together into one big number.",
+        ],
+      },
+      {
+        heading: "Legal and Responsible Gaming Note",
+        paragraphs: [
+          "Bonuses are tied to real-money play, which is strictly for adults aged 18 and above. India's Promotion and Regulation of Online Gaming Act, 2025 restricts online money games, and state rules may add further limits, so bonus features and availability can change. Check the laws where you live before depositing, and if gaming stops being fun, the free Tele-MANAS helpline on 14416 offers confidential support.",
+        ],
+      },
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "The Teen Patti Master ₹5,100 bonus is a maximum spread across many steps, not a gift paid on day one. The small instant credit is easy to get; the rest depends on deposits, turnover and wagering rules that make most of it hard to convert into cash.",
+          "Read the terms, watch your withdrawable balance, ignore anyone offering bonus shortcuts, and never let a reward ladder decide how much you spend.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Do I get ₹5,100 immediately after signing up?",
+        a: "Usually not. Headline bonuses are typically a maximum unlocked over time, starting with a small instant credit and continuing through deposit and turnover milestones.",
+      },
+      {
+        q: "Can I withdraw the Teen Patti Master bonus?",
+        a: "Bonus balance normally becomes withdrawable only after its wagering requirement is met. Check the terms shown in the app.",
+      },
+      {
+        q: "What is a wagering requirement?",
+        a: "It is the number of times you must bet a bonus before it becomes withdrawable. A ₹100 bonus with 10x wagering needs ₹1,000 in bets.",
+      },
+      {
+        q: "Why was my sign-up bonus not credited?",
+        a: "Common reasons are an unverified mobile number, an offer already used on the same device, or using clone apps or multiple accounts.",
+      },
+      {
+        q: "Does the bonus expire?",
+        a: "Many bonuses have a time limit for completing wagering. If it runs out, the remaining bonus balance is usually removed, so check the expiry in the bonus terms.",
+      },
+      {
+        q: "Should I always accept the sign-up bonus?",
+        a: "Not always. If a bonus locks your deposit behind heavy wagering or pushes you to play more than planned, declining it can be the better choice.",
+      },
+      {
+        q: "Is someone offering a bigger bonus through their UPI ID genuine?",
+        a: "No. Deposits should only go through the app wallet. Anyone asking you to pay their personal UPI ID for a bonus is a scammer.",
+      },
+    ],
   },
   {
-    slug: 'teen-patti-master-instant-withdrawal-upi',
-    title: 'Teen Patti Master UPI Withdrawal: How to Get Cash in 5 Minutes',
-    category: 'Banking',
-    desc: 'Step-by-step method to withdraw your winnings straight to GPay, PhonePe, or Paytm without pending problems.',
-    readTime: '3 min',
-    publishedAt: '2026-10-06',
-    image: '/teen-patti-master-game-2026.webp',
+    slug: "teen-patti-master-instant-withdrawal-upi",
+    title: "Teen Patti Master UPI Withdrawal: Step-by-Step Cashout Guide",
+    metaTitle: "Teen Patti Master UPI Withdrawal: Cashout Guide (2026)",
+    category: "Banking",
+    desc: "How to withdraw money from Teen Patti Master to UPI step by step: pre-withdrawal checklist, limits, realistic timelines, records to keep and tax basics.",
+    readTime: "9 min",
+    publishedAt: "2026-10-06",
+    updatedAt: "2026-10-28",
+    image: "/teen-patti-master-game-2026.webp",
+    intro: [
+      "Withdrawing money is the moment that matters most for any real-money player, and it is also where most confusion happens. Searches for \"Teen Patti Master instant withdrawal UPI\" are full of promises about cash arriving in minutes, but the real experience depends on your bank, your details and the terms attached to your balance.",
+      "This guide walks through a Teen Patti Master UPI withdrawal from start to finish: what to check before you tap Withdraw, the steps themselves, how long it realistically takes, what records to keep, and the tax basics every Indian player should know. If your withdrawal is already stuck, our separate pending withdrawal guide covers troubleshooting in detail. Limits and options can change with app updates and regulation, so always follow what your app shows.",
+    ],
     content: [
       {
-        heading: 'Rules for Smooth Withdrawals',
+        heading: "Before You Withdraw: Quick Checklist",
         points: [
-          'Double-check your UPI ID (e.g., yourname@okhdfcbank) before hitting confirm.',
-          'Minimum cashout limit is ₹100, which is great for casual players.',
-          'Most transfers land within 5 to 10 minutes during regular banking hours.'
-        ]
+          "Your account is bound to your own mobile number.",
+          "The amount is in your withdrawable balance, not only in bonus balance.",
+          "No active bonus is blocking withdrawals until its wagering is complete.",
+          "Your UPI ID is saved correctly and linked to an account in your own name.",
+          "The amount is above the minimum and within today's limit shown in the app.",
+          "You have not already used today's number of allowed withdrawals.",
+        ],
       },
       {
-        heading: 'What to Do if Money is Pending?',
+        heading: "How to Withdraw from Teen Patti Master to UPI",
         points: [
-          'Wait 15 minutes before panicking — bank servers sometimes take a moment to update.',
-          'If it takes longer, copy your Order ID and tap the in-game 24/7 Help Desk.',
-          'Never share your OTP or screen share with anyone claiming to be support on Telegram.'
-        ]
-      }
-    ]
+          "Step 1: Open the app and go to the Wallet or Withdraw section.",
+          "Step 2: Choose UPI as the withdrawal method.",
+          "Step 3: Confirm your saved UPI ID, or add it if this is your first withdrawal.",
+          "Step 4: Enter the amount you want to withdraw.",
+          "Step 5: Review the summary screen carefully, then confirm.",
+          "Step 6: Screenshot the confirmation and note the Order ID.",
+          "Step 7: Watch your bank app or SMS alerts for the credit.",
+        ],
+      },
+      {
+        heading: "How Long Does a UPI Withdrawal Take?",
+        paragraphs: [
+          "Advertisements often promise instant cashouts, but the honest answer is \"it varies\". A withdrawal passes through the app's processing, a payment gateway and finally your bank. Any of these can add delay, especially at night, on weekends, during festivals or on bank holidays.",
+        ],
+        table: {
+          headers: [
+            "Situation",
+            "Typical Timing",
+          ],
+          rows: [
+            [
+              "Normal weekday, details correct",
+              "Often minutes to a few hours",
+            ],
+            [
+              "Night, weekend or festival",
+              "Can take longer, sometimes up to a day",
+            ],
+            [
+              "First withdrawal or large amount",
+              "May include an extra security or KYC check",
+            ],
+            [
+              "Wrong UPI ID or name mismatch",
+              "Usually fails or is returned to the wallet",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "UPI Limits Worth Knowing",
+        paragraphs: [
+          "Two different sets of limits apply. The app sets its own minimum and maximum withdrawal amounts and the number of withdrawals per day. Separately, UPI itself has transaction limits set by your bank and the payment system. For larger amounts, a direct bank transfer may be more practical than UPI.",
+          "Check both before planning a large withdrawal, and split it across days if needed rather than having it rejected.",
+        ],
+      },
+      {
+        heading: "Understanding the Withdrawal Status",
+        paragraphs: [
+          "After you confirm, the status usually moves from processing to success. If it shows success but the money has not arrived, the delay is normally on the bank side; ask support for the UTR number and check with your bank. If it shows failed or returned, the money usually goes back to your app wallet and you can correct your details and try again. For anything stuck longer than a day, follow the steps in our pending withdrawal guide.",
+        ],
+      },
+      {
+        heading: "First Withdrawal: What to Expect",
+        paragraphs: [
+          "Your first withdrawal is often the slowest. Platforms commonly run extra checks the first time money leaves an account, especially for larger amounts. You may be asked to complete KYC, confirm your mobile number again or wait for a manual review.",
+          "This is normal and is designed to stop fraud. The easiest way through it is a small first withdrawal with details that exactly match your bank records. Once that succeeds, later withdrawals usually move faster.",
+        ],
+      },
+      {
+        heading: "Common Withdrawal Mistakes",
+        table: {
+          headers: [
+            "Mistake",
+            "What Happens",
+            "Fix",
+          ],
+          rows: [
+            [
+              "Typing the UPI ID by hand",
+              "Typos cause failed or returned payouts",
+              "Copy it from your UPI app",
+            ],
+            [
+              "Using a family member's account",
+              "Name mismatch and security review",
+              "Use an account in your own name",
+            ],
+            [
+              "Withdrawing bonus balance",
+              "Request blocked or rejected",
+              "Complete wagering first",
+            ],
+            [
+              "Many small requests in one day",
+              "Daily limit reached",
+              "Combine into fewer withdrawals",
+            ],
+            [
+              "Requesting again while one is pending",
+              "Confusing duplicate tickets",
+              "Wait for the first to finish",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Records You Should Keep",
+        table: {
+          headers: [
+            "Record",
+            "Why It Matters",
+          ],
+          rows: [
+            [
+              "Order ID from the app",
+              "Identifies the withdrawal for support",
+            ],
+            [
+              "UTR number",
+              "Lets your bank trace the payment",
+            ],
+            [
+              "Date, time and amount",
+              "Needed for any complaint",
+            ],
+            [
+              "Screenshots of success screens",
+              "Proof if something goes wrong",
+            ],
+            [
+              "Monthly totals in and out",
+              "Helps with budgeting and tax",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Tax Basics for Indian Players",
+        paragraphs: [
+          "Under Indian income tax rules, net winnings from online games can be taxable, and platforms may deduct TDS (tax deducted at source) on net winnings when you withdraw. The amount you receive can therefore be less than the amount you requested, and the platform may issue a TDS certificate.",
+          "Keep your records and check your annual tax statement. Tax rules can change, so speak to a qualified tax professional if your winnings are significant. Nothing in this guide is tax advice.",
+        ],
+      },
+      {
+        heading: "UPI or Bank Transfer for Your Cashout?",
+        paragraphs: [
+          "UPI is convenient for small and medium withdrawals because there is only one short ID to get right. For larger sums, a bank transfer can avoid UPI transaction limits. Whichever you choose, the account must be in your own name, and you should stick with the same method rather than switching often. Our bank account and UPI setup guide explains how to add either method correctly.",
+        ],
+      },
+      {
+        heading: "Planning Withdrawals as Part of Your Budget",
+        paragraphs: [
+          "Many players only think about withdrawing when they want to stop. A healthier habit is to decide in advance: for example, withdraw anything above your starting balance at the end of each session. Money that leaves the app cannot be played back on impulse.",
+          "Pair this with a monthly record of deposits and withdrawals. Seeing the real totals side by side is one of the most effective ways to keep gaming within a sensible budget.",
+        ],
+      },
+      {
+        heading: "Tips for Smooth Withdrawals",
+        points: [
+          "Make a small first withdrawal to confirm your details work.",
+          "Withdraw during daytime on weekdays when speed matters.",
+          "Avoid changing your UPI ID frequently; repeated changes can trigger security checks.",
+          "Withdraw winnings regularly instead of leaving large balances in the app.",
+          "Read bonus terms before accepting offers that may lock your balance.",
+        ],
+      },
+      {
+        heading: "What to Do If a Withdrawal Fails",
+        points: [
+          "Check whether the amount has returned to your app wallet.",
+          "Compare your saved UPI ID and name with your bank records and correct any mistake.",
+          "Make sure the UPI ID is still active in your UPI app.",
+          "Try again with a smaller amount if you suspect a limit was reached.",
+          "If it fails again, contact in-app support with the Order ID and screenshots.",
+          "For withdrawals stuck for more than a day, follow our pending withdrawal guide step by step.",
+        ],
+      },
+      {
+        heading: "Safety Reminders",
+        points: [
+          "Receiving money never requires your UPI PIN. Anyone asking for it to \"send\" you money is a scammer.",
+          "Contact support only through the app, never through numbers found online.",
+          "Never pay a fee to \"unlock\" a withdrawal.",
+          "Report fraud immediately on 1930 or at cybercrime.gov.in.",
+        ],
+      },
+      {
+        heading: "Final Thoughts",
+        paragraphs: [
+          "A Teen Patti Master UPI withdrawal is simple when the basics are right: withdrawable balance, no blocking bonus, correct UPI details in your own name, and amounts within the limits. Timing depends heavily on banks, so treat \"instant\" as a best case rather than a promise.",
+          "Keep your Order IDs and UTR numbers, understand the tax side, and never share a PIN or pay an unlock fee. Real-money play is for adults aged 18 and above; check the laws where you live and play within your budget.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "How long does a Teen Patti Master UPI withdrawal take?",
+        a: "Often minutes to a few hours on a normal weekday, but it can take longer at night, on weekends, during festivals or for first and large withdrawals.",
+      },
+      {
+        q: "Why did I receive less than I withdrew?",
+        a: "Platforms may deduct TDS on net winnings under Indian tax rules, so the credited amount can be lower than the requested amount.",
+      },
+      {
+        q: "Why can't I withdraw my full balance?",
+        a: "Part of it may be bonus balance with unmet wagering, or the amount may exceed the daily limit shown in the app.",
+      },
+      {
+        q: "Withdrawal shows success but no money arrived. What now?",
+        a: "Ask in-app support for the UTR number and check with your bank, which can trace the payment using that number.",
+      },
+      {
+        q: "Is there a fee to withdraw to UPI?",
+        a: "Check the withdrawal screen in your app, which shows any charges or tax deductions before you confirm. Never pay a separate \"unlock\" fee to anyone.",
+      },
+      {
+        q: "Why is my first withdrawal slower?",
+        a: "Platforms often run extra security or KYC checks on the first withdrawal. A small first withdrawal with exactly matching details usually clears fastest.",
+      },
+      {
+        q: "Do I need my UPI PIN to receive a withdrawal?",
+        a: "No. Receiving money never needs your UPI PIN. Anyone asking for it is attempting fraud.",
+      },
+    ],
   },
   // --- Nava SEO Ranking Articles ---
   {
     slug: "teen-patti-master-withdrawal-problem-pending-solution",
+    lang: "hi",
     title: "Teen Patti Master Withdrawal Pending: कारण, समाधान और ज़रूरी सावधानियाँ",
     metaTitle: "Teen Patti Master Withdrawal Pending? कारण और समाधान (2026)",
     category: "Troubleshooting",

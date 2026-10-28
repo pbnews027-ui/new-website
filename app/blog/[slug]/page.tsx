@@ -5,12 +5,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ARTICLES_DATA } from '../articlesData';
 import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from '@/lib/site';
+import { autolink, createLinkState } from '@/lib/autolink';
 
-// These slugs have their own hand-written page folders, which take precedence.
-const CUSTOM_PAGE_SLUGS = [
-  'claim-5100-sign-up-bonus-teen-patti-master',
-  'teen-patti-master-instant-withdrawal-upi',
-];
+// Slugs with their own hand-written page folders (these take precedence).
+const CUSTOM_PAGE_SLUGS: string[] = [];
 
 export const dynamicParams = false;
 
@@ -67,6 +65,7 @@ export default async function ArticlePage({
   const pageUrl = `${SITE_URL}/blog/${article.slug}`;
   const modified = article.updatedAt ?? article.publishedAt;
   // Same-category guides first, then the newest others.
+  const links = createLinkState(article.slug);
   const related = ARTICLES_DATA.filter((a) => a.slug !== article.slug)
     .sort(
       (a, b) =>
@@ -113,7 +112,9 @@ export default async function ArticlePage({
   };
 
   return (
-    <article className="min-h-screen bg-[#070b14] text-slate-200 font-sans antialiased selection:bg-amber-400 selection:text-black py-10 px-4 sm:px-6 lg:px-8">
+    <article
+      lang={article.lang ?? 'en'}
+      className="min-h-screen bg-[#070b14] text-slate-200 font-sans antialiased selection:bg-amber-400 selection:text-black py-10 px-4 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -172,7 +173,7 @@ export default async function ArticlePage({
         {article.intro && (
           <section className="space-y-4 text-sm sm:text-base leading-relaxed text-slate-300">
             {article.intro.map((para) => (
-              <p key={para}>{para}</p>
+              <p key={para}>{autolink(para, links)}</p>
             ))}
           </section>
         )}
@@ -185,7 +186,7 @@ export default async function ArticlePage({
             </h2>
             {section.paragraphs?.map((para) => (
               <p key={para} className="text-sm sm:text-base leading-relaxed text-slate-300">
-                {para}
+                {autolink(para, links)}
               </p>
             ))}
             {section.table && (
@@ -220,7 +221,7 @@ export default async function ArticlePage({
             {section.points && (
               <ul className="space-y-2.5 text-sm sm:text-base text-slate-300 bg-slate-900/50 p-6 rounded-2xl border border-slate-800 list-disc list-inside">
                 {section.points.map((point) => (
-                  <li key={point}>{point}</li>
+                  <li key={point}>{autolink(point, links)}</li>
                 ))}
               </ul>
             )}
