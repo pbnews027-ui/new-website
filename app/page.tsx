@@ -85,9 +85,23 @@ export default function Home() {
     })),
   };
 
-  const sortedArticles = [...ARTICLES_DATA].sort((a, b) =>
-    b.publishedAt.localeCompare(a.publishedAt)
-  );
+  // Core keyword guides, linked from the top of the home page with keyword anchor text.
+  const popularGuides = [
+    { slug: 'teen-patti-master-app', label: 'Teen Patti Master App' },
+    { slug: 'teen-patti-master-game', label: 'Teen Patti Master Game' },
+    { slug: 'teen-patti-master-download', label: 'Teen Patti Master Download' },
+    { slug: 'teen-patti-master-2027', label: 'Teen Patti Master 2027' },
+    { slug: 'claim-5100-sign-up-bonus-teen-patti-master', label: 'Teen Patti Master 51 Bonus' },
+    { slug: 'teen-patti-master-old-version-download', label: 'Teen Patti Master Old Version' },
+    { slug: 'teen-patti-master-vs-teen-patti-gold', label: 'Teen Patti Master vs Teen Patti Gold' },
+    { slug: 'teen-patti-master-customer-care', label: 'Teen Patti Master Customer Care' },
+  ];
+  const popularSlugs = new Set(popularGuides.map((g) => g.slug));
+
+  // Every other guide appears once, either as a card or in the list below it.
+  const sortedArticles = [...ARTICLES_DATA]
+    .filter((a) => !popularSlugs.has(a.slug))
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
   const recentArticles = sortedArticles.slice(0, 6);
   const moreArticles = sortedArticles.slice(6);
 
@@ -250,6 +264,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Popular keyword guides */}
+      <nav aria-label="Popular Teen Patti Master guides" className="px-5 lg:px-12 py-10 max-w-7xl mx-auto border-t border-slate-800/80">
+        <h2 className="text-xl sm:text-2xl font-black text-white mb-5">Popular Teen Patti Master Guides</h2>
+        <ul className="flex flex-wrap gap-3">
+          {popularGuides.map((g) => (
+            <li key={g.slug}>
+              <Link
+                href={`/blog/${g.slug}`}
+                className="inline-block px-4 py-2.5 rounded-xl bg-slate-900/70 border border-slate-700 text-sm font-semibold text-slate-200 hover:border-amber-400/60 hover:text-amber-300 transition"
+              >
+                {g.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
       {/* Articles Indexing Section */}
       <section id="latest-guides" className="px-5 lg:px-12 py-12 max-w-7xl mx-auto border-t border-slate-800/80">
