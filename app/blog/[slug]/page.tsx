@@ -37,6 +37,7 @@ export async function generateMetadata({
     description: article.desc,
     alternates: { canonical: url },
     openGraph: {
+      siteName: SITE_NAME,
       title: article.title,
       description: article.desc,
       url,

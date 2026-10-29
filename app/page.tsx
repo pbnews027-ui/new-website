@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FaqSection from '@/components/FaqSection';
 import { ARTICLES_DATA } from './blog/articlesData';
-import { DOWNLOAD_URL, SITE_URL } from '@/lib/site';
+import { DOWNLOAD_URL, SITE_NAME, SITE_URL } from '@/lib/site';
 
 // 1. Google SEO Search Engine Meta Tags
 export const metadata: Metadata = {
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
+    siteName: SITE_NAME,
     title: 'Teen Patti Master APK Download 2026 - Complete Guide',
     description:
       'Install steps, game modes, hand rankings, bonus rules and UPI withdrawal help for Teen Patti Master.',

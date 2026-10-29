@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ARTICLES_DATA } from './articlesData';
-import { SITE_URL } from '@/lib/site';
+import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Master Guides 2026: APK, Bonus, Withdrawal & Tips',
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     'All Teen Patti Master guides in one place: APK download and install help, bonus rules, UPI withdrawal fixes, VIP levels and card game strategy for 2026.',
   alternates: { canonical: '/blog' },
   openGraph: {
+    siteName: SITE_NAME,
     title: 'Teen Patti Master Guides 2026',
     description:
       'APK install help, bonus rules, UPI withdrawal fixes, VIP levels and card game strategy.',
